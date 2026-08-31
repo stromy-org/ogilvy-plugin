@@ -1,0 +1,29 @@
+# Changes here will be overwritten by Copier; DO NOT edit manually.
+_commit: v1.0.2
+_src_path: gh:stromy-org/claude-plugin-template
+author_name: Stromy
+client_name: Ogilvy Dominicana
+client_slug: ogilvy
+description: Claude Code plugin for Ogilvy Dominicana branded deliverables (format
+    skills via stromy-format MCP) and Dominican Republic government-data intelligence
+    (do-gov-data MCP)
+enable_stromy_format: true
+github_org: stromy-org
+include_mcp: false
+include_node: true
+include_python: true
+mcp_servers:
+-   consumed_by:
+    - claude
+    name: do-gov-data
+    notes: Dominican Republic government open-data MCP (ORG-PLAN-199) — procurement
+        (DGCP), budget execution, both chambers with roll-call votes, consolidated
+        law from 1844, SCJ + TC caselaw, audits, open-data discovery, regulators,
+        macro. Unauthenticated, so plugin-declared — no connector step. Skills are
+        Spanish; start at do-guide. Composes with stromy-format for rendering.
+    transport: http
+    url: https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp
+plugin_name: Ogilvy Dominicana Deliverables
+plugin_slug: ogilvy-plugin
+provider_targets: claude
+version: 0.1.0

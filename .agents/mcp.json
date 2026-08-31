@@ -1,0 +1,22 @@
+{
+  "$schema": "https://gofastmcp.com/public/schemas/mcp-config.schema.json",
+  "_notes": "Canonical MCP server config for ogilvy-plugin. Edit only this file. Run scripts/render-mcp.py to regenerate .mcp.json / .gemini/settings.json / .codex/config.toml / .vscode/mcp.json.",
+  "_connection_model": "Authenticated HTTP MCPs (interactive OAuth, e.g. asset-broker) are consumed as Cowork workspace connectors — do NOT declare them here; a plugin-declared OAuth MCP can only auth via a localhost loopback that fails in remote sessions. Only no-auth HTTP MCPs (stromy-format) and stdio servers belong in a plugin. See infra-docs/ai/mcp-connection-model.md (enforced by validate-plugin-completeness.py Invariant #13).",
+  "servers": {
+    "stromy-format": {
+      "transport": "http",
+      "url": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp",
+      "_consumed_by": ["claude", "codex", "gemini"],
+      "_codex_via": "mcp-remote",
+      "_gemini_via": "mcp-remote",
+      "_notes": "Hosted format skills fetched at runtime via fs_read from the stromy-format MCP."
+    }
+,
+    "do-gov-data": {
+      "transport": "http",
+      "url": "https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp",
+      "_consumed_by": ["claude"],
+      "_notes": "Dominican Republic government open-data MCP (ORG-PLAN-199) \u2014 procurement (DGCP), budget execution, both chambers with roll-call votes, consolidated law from 1844, SCJ + TC caselaw, audits, open-data discovery, regulators, macro. Unauthenticated, so plugin-declared \u2014 no connector step. Skills are Spanish; start at do-guide. Composes with stromy-format for rendering."
+    }
+  }
+}
