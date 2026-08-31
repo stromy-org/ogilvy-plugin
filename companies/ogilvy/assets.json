@@ -1,0 +1,155 @@
+{
+  "version": "1.0",
+  "fonts": [
+    {
+      "family": "Ogilvy Sans",
+      "weight": 400,
+      "style": "normal",
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "mime": "font/ttf",
+      "name": "Inter[opsz,wght].ttf"
+    },
+    {
+      "family": "Ogilvy Serif",
+      "weight": 400,
+      "style": "normal",
+      "sha256": "c40f2293766a503bc70cce9e512ef844a4ccb7cbcde792fe2ea31d191917d8d6",
+      "mime": "font/ttf",
+      "name": "PlayfairDisplay[wght].ttf"
+    }
+  ],
+  "logos": [
+    {
+      "name": "apple-touch-icon.png",
+      "sha256": "1c398cb9ddd7890d78cf6d2fd35ed435c22195fefaac06839fa9fd27d6231921",
+      "mime": "image/png"
+    },
+    {
+      "name": "favicon-16.png",
+      "sha256": "66deaf8977dedd6c2fe42ddb2b95317fae3726071406e1fe7d97abb6ae721c2d",
+      "mime": "image/png"
+    },
+    {
+      "name": "favicon-192.png",
+      "sha256": "20214a3b8edd36ec89e096e7691619ce850e45a990353a7e598c28eab75fd660",
+      "mime": "image/png"
+    },
+    {
+      "name": "favicon-256.png",
+      "sha256": "4e75caa61f58a3f554dfd3242d32816ba6c840a2e57de8cbf44f57f551d36c2c",
+      "mime": "image/png"
+    },
+    {
+      "name": "favicon-32.png",
+      "sha256": "fb4737db3a95fd0e94e4636d43135f1d071a3a567a411b53fd3513afb80d8c6e",
+      "mime": "image/png"
+    },
+    {
+      "name": "logo-black.png",
+      "sha256": "e9e79ad816702e21aec2a3329ed3284643ed765a6dfe7f002d2dd6ae089ffa51",
+      "mime": "image/png"
+    },
+    {
+      "name": "logo-red.svg",
+      "sha256": "8f59f90c4360912c73f8babee53b94ba245a507914aa09af7421e950b0ef95a6",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "logo-white.png",
+      "sha256": "25f61fa8c10303831d35e96e36b72aacccec9b6f4b32bb87e53c1a2d4fe2cbf5",
+      "mime": "image/png"
+    },
+    {
+      "name": "logo-white.svg",
+      "sha256": "95edfd47085626b804d7bad60226cb70070c7d085d4c4bc5abc4eb330edfa727",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "logo.svg",
+      "sha256": "c8290120c92533ff1024a9848b3de668fe3382c2b0f1f14c96c54331ee47100e",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "motif-big-o-red.svg",
+      "sha256": "0ec0f86c7d18561cd2ba36c564625b2289f56430215d1c069a4f204d03d596cf",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "motif-big-o-white.svg",
+      "sha256": "b3b9ffff54229341a1ab2f24599f994be85058bf112dffe3c72e828ab4f54848",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "motif-big-o.svg",
+      "sha256": "9b72e3cb6614885d22fbfc03824615f2c124496bc8e7ca068a3370d711d85255",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "og-image.png",
+      "sha256": "4145febc01e3496a1bb456760dd27a376394b1e627da4c450cc4cfa57269808b",
+      "mime": "image/png"
+    },
+    {
+      "name": "pattern-ghost-grid-white.svg",
+      "sha256": "5e5689bcdabeb835a3eeb159f2dee356bde51f94c7d630a84b5be5e548768ed0",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "pattern-ghost-grid.svg",
+      "sha256": "c0cc7c5430829cabe28ff449d5322c5f489fa85cc1ca7fd35ea54d67164079e9",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "rule-dot-white.svg",
+      "sha256": "fbe647ae08996504356cf69d032682ae2e441238503d03658fcfc12b845fc258",
+      "mime": "image/svg+xml"
+    },
+    {
+      "name": "rule-dot.svg",
+      "sha256": "cf27e073efbb241389cfb11397150d3b12377c56969346d761242bca93f24245",
+      "mime": "image/svg+xml"
+    }
+  ],
+  "images": [
+    {
+      "name": "gradient-accent.png",
+      "sha256": "e89877b2851dcf113b9d7be4d5ab88c717101cd7e4a1d8d6635dd00b916c0cdd",
+      "mime": "image/png"
+    },
+    {
+      "name": "gradient-dark.png",
+      "sha256": "4ba4b6821cb1099808c090444997e1da9d6b144071453dac63487e13c7bf8ac2",
+      "mime": "image/png"
+    },
+    {
+      "name": "red-boxes.jpg",
+      "sha256": "1aec6ef2836f93508d395e2e4c34dbd660c8fabcb9ce7508118786e22fe4362a",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "red-glasses.jpg",
+      "sha256": "0dbee2c0ec456605448651ea1d57e5f34108af0971630c16ca9970e1ebd751da",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "red-megaphone.jpg",
+      "sha256": "2b80bc314259860aba25d2098f59c5b010223f3b880554b03dd923fd5c14e757",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "red-ribbon.jpg",
+      "sha256": "4e58c66be6f8ff9cc2229aed6531d41ad3e03a4affcdb0e799b07d4ff2d703a2",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "red-telephone.jpg",
+      "sha256": "2e23156b740f73b2f31f9c9e14a12ed738b44dba1b2414c59a37381c40e3f225",
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "red-typewriter.jpg",
+      "sha256": "3c806e106f056208612bf1785add018e5bc225fb25f7cf8fe5af178958ab8f0c",
+      "mime": "image/jpeg"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+:root {
+  /* ------------------------------------------------------------------
+   * Ogilvy brand tokens — v2 (2026-08-26)
+   * Derived from charter.json. Do not hand-edit in isolation: charter.json
+   * is the source of truth and this file is its CSS-consumable view.
+   * ------------------------------------------------------------------ */
+
+  /* Core palette */
+  --color-primary:        #231F20;
+  --color-secondary:      #231F20;
+  --color-accent:         #EB3F43;
+  --color-background:     #FFFFFF;
+  --color-background-alt: #F4F4F4;
+  --color-text:           #231F20;
+  --color-text-light:     #6E6B6C;
+  --color-text-dark:      #000000;
+
+  /* Red tints — tints OF the accent, never a second hue (charter antiPattern #1) */
+  --color-red-tint-100:   #FBCECE;
+  --color-red-tint-50:    #FDE7E7;
+
+  /* Semantic — palette-aligned "cool ledger" set. Deliberately NOT the
+   * bootstrap defaults: the old error #DC3545 was confusable with the brand red. */
+  --color-success:        #3F7A6A;
+  --color-success-light:  #E9F0EE;
+  --color-warning:        #B98A3C;
+  --color-warning-light:  #F5EBDA;
+  /* Warning is the one semantic whose base tone is too light to sit as TEXT on
+   * its own light fill (~3.2:1). Use warning-ink for that pairing; the base
+   * stays for solid fills with white text. */
+  --color-warning-ink:    #8F6A2C;
+  --color-error:          #6E2A3C;
+  --color-error-light:    #EFE0E4;
+  --color-info:           #231F20;
+  --color-info-light:     #F4F4F4;
+
+  /* Fonts — PROPRIETARY named faces first, fallback stacks only.
+   * Ogilvy Serif / Ogilvy Sans are restricted and are never embedded. */
+  --font-heading:         'Ogilvy Serif', Georgia, 'Playfair Display', 'Times New Roman', serif;
+  --font-body:            'Ogilvy Sans', 'Helvetica Neue', Helvetica, Inter, Arial, sans-serif;
+  --font-wordmark:        'Ogilvy Serif', Georgia, 'Playfair Display', 'Times New Roman', serif;
+  --font-label:           'Ogilvy Sans', 'Helvetica Neue', Helvetica, Inter, Arial, sans-serif;
+  --font-mono:            ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Small-title / eyebrow role (L1 "ticker caps").
+   * Never render an eyebrow in --font-mono — see charter antiPattern #4. */
+  --label-case:           uppercase;
+  --label-tracking:       0.16em;
+  --label-weight:         600;
+  --label-size:           0.6875rem;
+
+  /* ---- Visual grammar ---- */
+
+  /* backgrounds — B1 "Red Gallery" 4-surface system */
+  --surface-canvas-red:   #EB3F43;   /* cover, hero, section-opener  (ink: #FFFFFF) */
+  --surface-gallery-white:#FFFFFF;   /* content, data, gallery       (ink: #231F20) */
+  --surface-band-pink:    #FBCECE;   /* section band, pull-quote     (ink: #231F20) */
+  --surface-closing-ink:  #231F20;   /* closing, back cover          (ink: #FFFFFF) */
+
+  /* gradients — G1, the ONLY gradient in the system (section openers/dividers) */
+  --gradient-section-wash: linear-gradient(180deg, #EB3F43 0%, #FBCECE 55%, #FFFFFF 100%);
+
+  /* grid — GR1 "Gallery modular" */
+  --grid-columns:         4;
+  --grid-gutter:          2.2%;
+  --grid-margin:          5.5%;
+  --grid-cell-aspect:     3 / 2;
+
+  /* motifs — M1 "The Big O" (structural) + rule-dot (micro)
+   *
+   * NOTE: asset PATHS are deliberately not tokens here. A relative url() inside
+   * a CSS custom property resolves against the CONSUMING document, not against
+   * this file — so `url('assets/svg/…')` silently 404s for any consumer not
+   * served from the brand root. Asset paths live once, in charter.json
+   * expression.visual_grammar.<dim>.assets[], which format skills resolve
+   * against the overlay root. Only metrics are tokenised. */
+  --motif-big-o-min-scale: 40%;  /* of the surface short edge — below this it reads as a letter */
+
+  /* patterns — P1 "Ghost grid". Scale to 100% width: four columns across the
+   * surface. A fine repeat reads as graph paper, not as the brand's grid. */
+  --pattern-ghost-grid-opacity-on-red:   0.22;
+  --pattern-ghost-grid-opacity-on-pink:  0.14;
+  --pattern-ghost-grid-opacity-on-white: 0.10;
+
+  /* iconography — I2 "Pure ink line". Red marks state, never style. */
+  --icon-stroke:          1.5px;
+  --icon-color:           #231F20;
+  --icon-color-active:    #EB3F43;
+  --icon-size:            24px;
+
+  /* elevation — E1 "Flat + hairline". Depth is occlusion, never shadow. */
+  --elevation-shadow:     none;
+  --rule-hairline-weight: 1px;
+  --rule-hairline:        #E2DEDF;
+  --rule-hairline-on-red: rgba(255, 255, 255, 0.35);
+
+  /* motion — MO2 "Ticker energy" */
+  --motion-ticker-duration: 9s;      /* full cycle at 1920px, linear, never eases */
+  --motion-ticker-ease:     linear;
+  --motion-settle-duration: 0.6s;
+  --motion-settle-distance: 14px;
+  --motion-settle-stagger:  80ms;
+  --motion-ease:            cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* photo — PH1 "Campaign vivid": no filter, no tint, no duotone.
+   * Text never sits over vivid imagery; it lives on an adjacent surface. */
+  --photo-filter:         none;
+  --photo-frame-inset:    0;
+}

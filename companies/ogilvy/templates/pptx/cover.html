@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+  COVER slide shell.
+  Visible frame only — slide body kept empty so the LLM authoring a real deck
+  composes any layout the content requires. References brand tokens via
+  var(--…); themed entirely through the brand's tokens.css.
+
+  Token contract (consumed at render time from the brand's tokens.css):
+    --color-primary, --color-secondary, --color-accent,
+    --color-background, --color-background-alt,
+    --color-text, --color-text-light,
+    --font-heading, --font-body, --font-mono
+  If the brand's tokens.css uses brand-prefixed names instead, the
+  render-anchors mode of the pptx-hd skill resolves the mapping.
+
+  Boilerplate placeholders (resolved from boilerplate.json at render time):
+    {{client}}, {{deck.coverFooter}}, {{confidentiality.text}}
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>cover</title>
+<link rel="stylesheet" href="../../tokens.css">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body {
+    width: 1920px; height: 1080px;
+    background: var(--color-background, #0a0a0a);
+    color: var(--color-text, #ffffff);
+    font-family: var(--font-body, sans-serif);
+    position: relative;
+    overflow: hidden;
+  }
+  .cover-image {
+    position: absolute; inset: 0;
+    background-size: cover; background-position: center;
+    z-index: 0;
+  }
+  .cover-overlay {
+    position: absolute; inset: 0;
+    background: var(--color-primary, #000);
+    opacity: 0.55;
+    z-index: 1;
+  }
+  .cover-content {
+    position: absolute; inset: 0;
+    padding: 96px 120px;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    z-index: 2;
+  }
+  .cover-eyebrow {
+    font-family: var(--font-mono, monospace);
+    font-size: 18pt;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-accent, #fff);
+    margin-bottom: 24px;
+  }
+  .cover-title {
+    font-family: var(--font-heading, serif);
+    font-size: 96pt;
+    font-weight: 700;
+    line-height: 1.05;
+    color: var(--color-text, #ffffff);
+    margin: 0 0 32px 0;
+    max-width: 1500px;
+  }
+  .cover-subtitle {
+    font-size: 28pt;
+    line-height: 1.3;
+    color: var(--color-text, #ffffff);
+    opacity: 0.85;
+    max-width: 1200px;
+    margin: 0;
+  }
+  .cover-footer {
+    position: absolute; bottom: 48px; left: 120px; right: 120px;
+    display: flex; justify-content: space-between; align-items: flex-end;
+    font-size: 12pt;
+    color: var(--color-text, #ffffff);
+    opacity: 0.7;
+    z-index: 2;
+  }
+  .cover-logo { height: 56px; }
+</style>
+</head>
+<body>
+  <div class="cover-image" data-anchor="cover.heroImage"></div>
+  <div class="cover-overlay" data-anchor="cover.overlay"></div>
+  <div class="cover-content">
+    <div class="cover-eyebrow" data-anchor="cover.eyebrow"></div>
+    <h1 class="cover-title" data-anchor="cover.title"></h1>
+    <p class="cover-subtitle" data-anchor="cover.subtitle"></p>
+  </div>
+  <div class="cover-footer">
+    <img class="cover-logo" data-anchor="cover.logo" alt="">
+    <span data-anchor="cover.footerRight">{{deck.coverFooter}}</span>
+  </div>
+</body>
+</html>

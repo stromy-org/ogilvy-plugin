@@ -1,0 +1,45 @@
+{
+  "$schema": "../../schema/boilerplate.schema.json",
+  "version": "1.0",
+  "description": "Boilerplate for the OGILVY DOMINICAN OFFICE (ogilvyrd.com), not the global Ogilvy network. address/email/phone are deliberately empty: they appear only in third-party directory listings, never on the client's own site, so they are not asserted onto rendered deliverables. Confirm with the client before filling them. Consumed at render time by every format skill.",
+  "address": "",
+  "website": "https://ogilvyrd.com",
+  "email": "",
+  "phone": "",
+  "footer": {
+    "show": true,
+    "left": "Ogilvy Dominicana",
+    "center": "",
+    "right": "Page {page} of {pages}"
+  },
+  "confidentiality": {
+    "show": false,
+    "level": "internal",
+    "text": "Confidencial — uso interno de Ogilvy Dominicana. No distribuir sin autorización escrita.",
+    "position": "footer-left",
+    "fontPt": 8
+  },
+  "watermark": {
+    "show": false,
+    "text": "DRAFT",
+    "opacity": 0.08,
+    "rotationDeg": -30,
+    "fontPt": 96,
+    "color": "{{colors.textLight|#cccccc}}"
+  },
+  "legal": {
+    "copyright": "© {{year}} Ogilvy Dominicana. Todos los derechos reservados.",
+    "trademark": "",
+    "disclaimer": ""
+  },
+  "deck": {
+    "coverFooter": "",
+    "closingTagline": "",
+    "agendaTitle": "Agenda"
+  },
+  "document": {
+    "draftBadge": "DRAFT",
+    "tocTitle": "Table of Contents",
+    "appendixTitle": "Appendix"
+  }
+}

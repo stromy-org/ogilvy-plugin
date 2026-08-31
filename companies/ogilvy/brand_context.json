@@ -1,0 +1,874 @@
+{
+  "client_slug": "ogilvy",
+  "schemaVersion": 1,
+  "version": "1.0",
+  "generatedFrom": {
+    "charterSha": "5749352849fd6d02dde7b667fb2595b1cc4a5dd06bfbcf6622bdf1b093d907bf",
+    "compiler": "1.0"
+  },
+  "tier": "output",
+  "warnings": [
+    "font substitution: heading declared 'Ogilvy Serif' but renders as 'Playfair Display' (original not embeddable) — on-screen face is 'Playfair Display'",
+    "font substitution: body, label declared 'Ogilvy Sans' but renders as 'Inter' (original not embeddable) — on-screen face is 'Inter'"
+  ],
+  "colors": {
+    "primary": "#231F20",
+    "secondary": "#231F20",
+    "accent": "#EB3F43",
+    "background": "#FFFFFF",
+    "backgroundAlt": "#F4F4F4",
+    "text": "#231F20",
+    "textLight": "#6E6B6C",
+    "textDark": "#000000",
+    "redTint100": "#FBCECE",
+    "redTint50": "#FDE7E7",
+    "success": "#3F7A6A",
+    "successLight": "#E9F0EE",
+    "warning": "#B98A3C",
+    "warningLight": "#F5EBDA",
+    "warningInk": "#8F6A2C",
+    "error": "#6E2A3C",
+    "errorLight": "#EFE0E4",
+    "info": "#231F20",
+    "infoLight": "#F4F4F4"
+  },
+  "typography": {
+    "heading": {
+      "family": "Ogilvy Serif",
+      "fallback": "Georgia, 'Times New Roman', serif",
+      "embedFamily": "Playfair Display",
+      "fallbackStack": [
+        "Georgia",
+        "Playfair Display",
+        "Times New Roman",
+        "serif"
+      ],
+      "webSafe": "Georgia"
+    },
+    "body": {
+      "family": "Ogilvy Sans",
+      "fallback": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "embedFamily": "Inter",
+      "fallbackStack": [
+        "Arial",
+        "Inter",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "webSafe": "Arial"
+    },
+    "label": {
+      "family": "Ogilvy Sans",
+      "weight": "600",
+      "fallback": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "embedFamily": "Inter",
+      "fallbackStack": [
+        "Arial",
+        "Inter",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "webSafe": "Arial",
+      "case": "uppercase",
+      "tracking": "0.16em"
+    }
+  },
+  "tokens_css": ":root {\n  /* ------------------------------------------------------------------\n   * Ogilvy brand tokens — v2 (2026-08-26)\n   * Derived from charter.json. Do not hand-edit in isolation: charter.json\n   * is the source of truth and this file is its CSS-consumable view.\n   * ------------------------------------------------------------------ */\n\n  /* Core palette */\n  --color-primary:        #231F20;\n  --color-secondary:      #231F20;\n  --color-accent:         #EB3F43;\n  --color-background:     #FFFFFF;\n  --color-background-alt: #F4F4F4;\n  --color-text:           #231F20;\n  --color-text-light:     #6E6B6C;\n  --color-text-dark:      #000000;\n\n  /* Red tints — tints OF the accent, never a second hue (charter antiPattern #1) */\n  --color-red-tint-100:   #FBCECE;\n  --color-red-tint-50:    #FDE7E7;\n\n  /* Semantic — palette-aligned \"cool ledger\" set. Deliberately NOT the\n   * bootstrap defaults: the old error #DC3545 was confusable with the brand red. */\n  --color-success:        #3F7A6A;\n  --color-success-light:  #E9F0EE;\n  --color-warning:        #B98A3C;\n  --color-warning-light:  #F5EBDA;\n  /* Warning is the one semantic whose base tone is too light to sit as TEXT on\n   * its own light fill (~3.2:1). Use warning-ink for that pairing; the base\n   * stays for solid fills with white text. */\n  --color-warning-ink:    #8F6A2C;\n  --color-error:          #6E2A3C;\n  --color-error-light:    #EFE0E4;\n  --color-info:           #231F20;\n  --color-info-light:     #F4F4F4;\n\n  /* Fonts — PROPRIETARY named faces first, fallback stacks only.\n   * Ogilvy Serif / Ogilvy Sans are restricted and are never embedded. */\n  --font-heading:         'Ogilvy Serif', Georgia, 'Playfair Display', 'Times New Roman', serif;\n  --font-body:            'Ogilvy Sans', 'Helvetica Neue', Helvetica, Inter, Arial, sans-serif;\n  --font-wordmark:        'Ogilvy Serif', Georgia, 'Playfair Display', 'Times New Roman', serif;\n  --font-label:           'Ogilvy Sans', 'Helvetica Neue', Helvetica, Inter, Arial, sans-serif;\n  --font-mono:            ui-monospace, SFMono-Regular, Menlo, monospace;\n\n  /* Small-title / eyebrow role (L1 \"ticker caps\").\n   * Never render an eyebrow in --font-mono — see charter antiPattern #4. */\n  --label-case:           uppercase;\n  --label-tracking:       0.16em;\n  --label-weight:         600;\n  --label-size:           0.6875rem;\n\n  /* ---- Visual grammar ---- */\n\n  /* backgrounds — B1 \"Red Gallery\" 4-surface system */\n  --surface-canvas-red:   #EB3F43;   /* cover, hero, section-opener  (ink: #FFFFFF) */\n  --surface-gallery-white:#FFFFFF;   /* content, data, gallery       (ink: #231F20) */\n  --surface-band-pink:    #FBCECE;   /* section band, pull-quote     (ink: #231F20) */\n  --surface-closing-ink:  #231F20;   /* closing, back cover          (ink: #FFFFFF) */\n\n  /* gradients — G1, the ONLY gradient in the system (section openers/dividers) */\n  --gradient-section-wash: linear-gradient(180deg, #EB3F43 0%, #FBCECE 55%, #FFFFFF 100%);\n\n  /* grid — GR1 \"Gallery modular\" */\n  --grid-columns:         4;\n  --grid-gutter:          2.2%;\n  --grid-margin:          5.5%;\n  --grid-cell-aspect:     3 / 2;\n\n  /* motifs — M1 \"The Big O\" (structural) + rule-dot (micro)\n   *\n   * NOTE: asset PATHS are deliberately not tokens here. A relative url() inside\n   * a CSS custom property resolves against the CONSUMING document, not against\n   * this file — so `url('assets/svg/…')` silently 404s for any consumer not\n   * served from the brand root. Asset paths live once, in charter.json\n   * expression.visual_grammar.<dim>.assets[], which format skills resolve\n   * against the overlay root. Only metrics are tokenised. */\n  --motif-big-o-min-scale: 40%;  /* of the surface short edge — below this it reads as a letter */\n\n  /* patterns — P1 \"Ghost grid\". Scale to 100% width: four columns across the\n   * surface. A fine repeat reads as graph paper, not as the brand's grid. */\n  --pattern-ghost-grid-opacity-on-red:   0.22;\n  --pattern-ghost-grid-opacity-on-pink:  0.14;\n  --pattern-ghost-grid-opacity-on-white: 0.10;\n\n  /* iconography — I2 \"Pure ink line\". Red marks state, never style. */\n  --icon-stroke:          1.5px;\n  --icon-color:           #231F20;\n  --icon-color-active:    #EB3F43;\n  --icon-size:            24px;\n\n  /* elevation — E1 \"Flat + hairline\". Depth is occlusion, never shadow. */\n  --elevation-shadow:     none;\n  --rule-hairline-weight: 1px;\n  --rule-hairline:        #E2DEDF;\n  --rule-hairline-on-red: rgba(255, 255, 255, 0.35);\n\n  /* motion — MO2 \"Ticker energy\" */\n  --motion-ticker-duration: 9s;      /* full cycle at 1920px, linear, never eases */\n  --motion-ticker-ease:     linear;\n  --motion-settle-duration: 0.6s;\n  --motion-settle-distance: 14px;\n  --motion-settle-stagger:  80ms;\n  --motion-ease:            cubic-bezier(0.2, 0.8, 0.2, 1);\n\n  /* photo — PH1 \"Campaign vivid\": no filter, no tint, no duotone.\n   * Text never sits over vivid imagery; it lives on an adjacent surface. */\n  --photo-filter:         none;\n  --photo-frame-inset:    0;\n}\n",
+  "identity": {
+    "essence": "We make brands matter.",
+    "positioning": "We design the brand; we turn the brand into an experience; and we communicate the brand’s story.",
+    "archetype": {
+      "primary": "ruler",
+      "secondary": "creator",
+      "status": "approved",
+      "rationale": "A3, operator-selected 2026-08-25. Category-authority posture — 'Network of the Year' award ticker, 80+ country scale, the David Ogilvy canon as institutional doctrine — with Creator secondary keeping the work itself the hero (the homepage is a gallery of exhibits, not a services list). Note: no archetype is stated in any Ogilvy-published material; this is an operator reading of public evidence, not a brand-owner declaration."
+    },
+    "personalityTraits": [
+      "authoritative",
+      "crafted",
+      "expressive",
+      "canonical",
+      "assured"
+    ],
+    "personalityAxes": {
+      "formalCasual": 0.35,
+      "traditionalInnovative": 0.55,
+      "reservedExpressive": 0.7,
+      "analyticalIntuitive": 0.5,
+      "establishedRebellious": 0.35
+    },
+    "company": {
+      "name": "Ogilvy Dominicana",
+      "description": "Ogilvy Dominicana is the Dominican Republic office of the Ogilvy advertising and marketing communications network, operating from Santo Domingo and trading locally as Partners Ogilvy. It serves Dominican and regional clients with advertising, brand strategy, public relations, customer engagement, digital marketing and social media work, drawing on the wider Ogilvy network founded in 1948 by David Ogilvy and owned by WPP.",
+      "website": "https://www.ogilvyrd.com",
+      "industries": [
+        "Marketing and Advertising",
+        "Business and Consumer Services"
+      ]
+    }
+  },
+  "boilerplate": {
+    "footer": "Ogilvy Dominicana",
+    "confidentiality": "Confidencial — uso interno de Ogilvy Dominicana. No distribuir sin autorización escrita.",
+    "copyright": "© {{year}} Ogilvy Dominicana. Todos los derechos reservados."
+  },
+  "expression": {
+    "sourceLevel": "expression",
+    "status": "approved",
+    "confidence": "high",
+    "source": "public_scrape",
+    "evidence": [
+      {
+        "path": "https://www.ogilvy.com/",
+        "kind": "html_head",
+        "sourceAuthority": "official_published",
+        "confidence": "high",
+        "surface": "web",
+        "freshness": "current",
+        "note": "theme-color + mask-icon + --selection-color all = #EB3F43; computed body ink #231F20 on white."
+      },
+      {
+        "path": "api.brandfetch.io/v2/brands/ogilvy.com",
+        "kind": "licensed_api",
+        "sourceAuthority": "licensed_api",
+        "confidence": "medium",
+        "surface": "all",
+        "freshness": "current",
+        "note": "Tier-0 Brandfetch: accent #EB3F43, dark #231F20, light #FFFFFF; fonts Ogilvy Serif/Sans (origin custom); qualityScore 0.997, claimed."
+      },
+      {
+        "path": "_build/reviews/evidence/ogilvy-home-viewport.png",
+        "kind": "live_site_capture",
+        "sourceAuthority": "official_published",
+        "confidence": "high",
+        "surface": "web",
+        "freshness": "current",
+        "note": "2026-08-25 capture. Full-bleed red canvas carrying a 4-column gallery grid with the giant white serif wordmark overlapping it. Establishes red-as-canvas and the gallery grid."
+      },
+      {
+        "path": "_build/reviews/evidence/ogilvy-home-mid.png",
+        "kind": "live_site_capture",
+        "sourceAuthority": "official_published",
+        "confidence": "high",
+        "surface": "web",
+        "freshness": "current",
+        "note": "2026-08-25 capture. Vertical red→pink→white section wash; scroll-settle statement reveal; oversized uppercase ticker rows with an image breaking through the type."
+      },
+      {
+        "path": "_build/reviews/evidence/ogilvy-home-lower.png",
+        "kind": "live_site_capture",
+        "sourceAuthority": "official_published",
+        "confidence": "high",
+        "surface": "web",
+        "freshness": "current",
+        "note": "2026-08-25 capture. White gallery canvas with vivid untreated campaign photography; hairline nav rule; wordmark rendered in Ogilvy Red on white (source for logo-red.svg)."
+      },
+      {
+        "path": "_build/reviews/OGILVY-Enhancement-Board.html",
+        "kind": "operator_review_gate",
+        "sourceAuthority": "co_created",
+        "confidence": "high",
+        "surface": "all",
+        "freshness": "current",
+        "note": "2026-08-25 brand-smell review gate. Operator selections: S2 semantic, L1 label, B1 backgrounds, G1 gradients, GR1 grid, M1 motifs, P1 patterns, I2 iconography, PH1 photo, E1 elevation, MO2 motion, SM2 signatureMotion, T1 imagery theme, A3 archetype; axes as-proposed."
+      }
+    ],
+    "principles": [
+      "Single-accent discipline: the Ogilvy Red is the sole non-neutral; pink is a tint of it, never a second hue.",
+      "Red is a canvas, not only an accent — covers and heroes are full-bleed red fields.",
+      "Editorial serif/sans pairing carries hierarchy — restraint over ornament.",
+      "The work is exhibited, not decorated: content sits in a strict gallery grid.",
+      "Depth comes from occlusion and surface change, never from shadow."
+    ],
+    "visualAxes": {
+      "density": "spacious",
+      "contrast": "high",
+      "symmetry": "balanced",
+      "geometry": "rectilinear",
+      "typeExpression": "editorial",
+      "imageTreatment": "documentary",
+      "motifProminence": "structural",
+      "colorRhythm": "mono-plus-single-accent",
+      "ornament": "restrained",
+      "energy": "expressive",
+      "depth": "layered",
+      "materiality": [
+        "matte"
+      ],
+      "continuity": "section-sequence"
+    },
+    "signatureElements": [
+      "Ogilvy Red (#EB3F43) as a full-bleed canvas, not only an accent",
+      "The Big O — the wordmark's own O glyph oversized and cropped at the edge as a frame/crop device",
+      "The four-column gallery grid, carried on both red and white canvases",
+      "Uppercase ticker bands as type-as-texture and as the brand's signature motion",
+      "Proprietary Ogilvy Serif + Ogilvy Sans type pairing (display serif, text sans)"
+    ],
+    "signatureMotion": "An uppercase band glides continuously while everything else settles over it — the red field itself never moves.",
+    "antiPatterns": [
+      "Introducing a second brand hue — the system is mono plus one red (pink is a tint of that red).",
+      "Shipping the proprietary fonts (restricted) — use the fallback stack.",
+      "Drop shadows or any elevation effect — depth is by occlusion only.",
+      "Setting an eyebrow in monospace — the label role is uppercase Ogilvy Sans with wide tracking.",
+      "Applying a brand filter, duotone or tint to campaign photography — imagery runs vivid and untreated.",
+      "Decorative use of the Big O at small scale — it is a structural crop device, minimum 40% of the surface's short edge.",
+      "Scraping or reusing ogilvy.com campaign imagery — it is client IP."
+    ],
+    "requiredMotifs": [
+      "--motif-big-o-min-scale",
+      "--rule-hairline-weight",
+      "motif-big-o",
+      "motif-big-o-red",
+      "motif-big-o-white",
+      "rule-dot",
+      "rule-dot-white"
+    ],
+    "visual_grammar": {
+      "backgrounds": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "live-site",
+          "source": "_build/reviews/evidence/ogilvy-home-{viewport,mid,lower}.png (2026-08-25) — full-bleed #EB3F43 hero, white gallery sections, #FBCECE panels. Operator-selected B1 on OGILVY-Enhancement-Board.html."
+        },
+        "tokens": [
+          "--color-background",
+          "--color-background-alt",
+          "--surface-canvas-red",
+          "--surface-band-pink",
+          "--surface-closing-ink"
+        ],
+        "selected": "red-gallery-4-surface",
+        "spec": {
+          "name": "Red Gallery (4-surface)",
+          "surfaces": [
+            {
+              "id": "canvas-red",
+              "fill": "#EB3F43",
+              "ink": "#FFFFFF",
+              "use": [
+                "cover",
+                "hero",
+                "section-opener"
+              ]
+            },
+            {
+              "id": "gallery-white",
+              "fill": "#FFFFFF",
+              "ink": "#231F20",
+              "use": [
+                "content",
+                "data",
+                "gallery"
+              ]
+            },
+            {
+              "id": "band-pink",
+              "fill": "#FBCECE",
+              "ink": "#231F20",
+              "use": [
+                "section-band",
+                "pull-quote",
+                "callout"
+              ]
+            },
+            {
+              "id": "closing-ink",
+              "fill": "#231F20",
+              "ink": "#FFFFFF",
+              "use": [
+                "closing",
+                "back-cover"
+              ]
+            }
+          ],
+          "defaultForRole": {
+            "cover": "canvas-red",
+            "content": "gallery-white",
+            "divider": "band-pink",
+            "closing": "closing-ink"
+          },
+          "note": "Content stays on gallery-white; red is reserved for covers, heroes and section openers so the field keeps its impact."
+        }
+      },
+      "gradients": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "live-site",
+          "source": "_build/reviews/evidence/ogilvy-home-mid.png — vertical red→pink→white wash at the section transition. Operator-selected G1."
+        },
+        "tokens": [
+          "--gradient-section-wash"
+        ],
+        "assets": [
+          "pptx-assets/gradient-dark.png",
+          "pptx-assets/gradient-accent.png"
+        ],
+        "selected": "section-wash-only",
+        "spec": {
+          "name": "Section wash only",
+          "stops": [
+            {
+              "at": "0%",
+              "color": "#EB3F43"
+            },
+            {
+              "at": "55%",
+              "color": "#FBCECE"
+            },
+            {
+              "at": "100%",
+              "color": "#FFFFFF"
+            }
+          ],
+          "direction": "180deg",
+          "allowedSurfaces": [
+            "section-opener",
+            "divider"
+          ],
+          "note": "The ONLY gradient in the system. Every other surface is a flat field — a gradient on a content page is off-grammar."
+        }
+      },
+      "grid": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "live-site",
+          "source": "_build/reviews/evidence/ogilvy-home-{viewport,lower}.png — strict 4-column thumbnail grid with equal gutters on both red and white canvases. Operator-selected GR1."
+        },
+        "tokens": [
+          "--grid-columns",
+          "--grid-gutter",
+          "--grid-margin"
+        ],
+        "selected": "gallery-modular",
+        "spec": {
+          "name": "Gallery modular",
+          "columns": 4,
+          "gutter": "2.2%",
+          "margin": "5.5%",
+          "cellAspect": "3:2",
+          "rowRhythm": "equal",
+          "note": "Content is exhibited: equal cells, equal gutters, generous outer margin. Spans of 2 or 4 cells are permitted; ragged or masonry layouts are not."
+        }
+      },
+      "motifs": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "live-site",
+          "source": "_build/reviews/evidence/ogilvy-home-viewport.png — the giant serif wordmark overlapping the gallery grid. Glyph extracted from the canonical logos/logo.svg by _build/reviews/build-motifs.py (not redrawn). Operator-selected M1."
+        },
+        "assets": [
+          "assets/svg/motif-big-o.svg",
+          "assets/svg/motif-big-o-red.svg",
+          "assets/svg/motif-big-o-white.svg",
+          "assets/svg/rule-dot.svg",
+          "assets/svg/rule-dot-white.svg"
+        ],
+        "tokens": [
+          "--motif-big-o-min-scale",
+          "--rule-hairline-weight"
+        ],
+        "selected": "the-big-o",
+        "spec": {
+          "name": "The Big O",
+          "marks": [
+            {
+              "name": "big-o",
+              "role": "structural",
+              "asset": "assets/svg/motif-big-o.svg",
+              "desc": "The wordmark's own O glyph, oversized and cropped at the surface edge — frame, crop mask and divider ornament."
+            },
+            {
+              "name": "rule-dot",
+              "role": "micro",
+              "asset": "assets/svg/rule-dot.svg",
+              "desc": "Dot-plus-hairline mark used as bullet, leader line and chart annotation; also precedes nothing by default (the L1 eyebrow is type-only)."
+            }
+          ],
+          "roles": {
+            "structural": "big-o",
+            "micro": "rule-dot"
+          },
+          "allowedSurfaces": {
+            "big-o": [
+              "cover",
+              "section-opener",
+              "closing",
+              "image-crop-mask"
+            ],
+            "rule-dot": [
+              "bullet",
+              "annotation",
+              "table-rule",
+              "footer"
+            ]
+          },
+          "usageCaps": {
+            "bigOPerComposition": 1,
+            "bigOMinScale": "40% of the surface's short edge — below that it reads as a letter, not a device",
+            "bigOMustBleed": true
+          },
+          "tokenPrefix": "--motif",
+          "note": "Operator selected M1 only. The ticker device (board M3) was deliberately NOT taken as a static motif — it lives in the motion dimension instead, so static surfaces carry the Big O + ghost grid and moving surfaces carry the band. See visual_grammar.motion.spec.staticCounterpart."
+        }
+      },
+      "patterns": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "live-site",
+          "source": "Derived from the GR1 gallery grid as a surface texture. Operator-selected P1."
+        },
+        "assets": [
+          "assets/svg/pattern-ghost-grid.svg",
+          "assets/svg/pattern-ghost-grid-white.svg"
+        ],
+        "tokens": [
+          "--pattern-ghost-grid-opacity"
+        ],
+        "selected": "ghost-grid",
+        "spec": {
+          "name": "Ghost grid",
+          "construction": "The 4-column gallery grid drawn as 1px outlines only, at low opacity, echoing the structural grid as background texture.",
+          "opacity": {
+            "onRed": 0.22,
+            "onPink": 0.14,
+            "onWhite": 0.1
+          },
+          "allowedSurfaces": [
+            "canvas-red",
+            "band-pink",
+            "section-opener"
+          ],
+          "intendedScale": "background-size: 100% auto — four columns across the full surface. Never a fine repeat: at small tile sizes it reads as graph paper, not as the brand's grid.",
+          "note": "Reduced from the board's 0.35 to 0.22 on red after full-bleed QA (0.35 read as structure rather than texture at tile density)."
+        }
+      },
+      "iconography": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "derived",
+          "source": "Derived from the site's hairline rules and 50%-only radii. Operator-selected I2."
+        },
+        "tokens": [
+          "--icon-stroke",
+          "--icon-size"
+        ],
+        "selected": "pure-ink-line",
+        "spec": {
+          "style": "line",
+          "strokeWeight": "1.5",
+          "corner": "square joins; circles only where a radius is needed",
+          "fillVsLine": "line-only; no filled shapes",
+          "color": "#231F20 default; #EB3F43 ONLY to mark the active or emphasised icon, never decoratively",
+          "note": "Quieter than the alternative dot-accented set — red in iconography is a state, not a style."
+        }
+      },
+      "photo": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "live-site",
+          "source": "_build/reviews/evidence/ogilvy-home-lower.png — vivid full-colour campaign work presented as framed exhibits. Operator-selected PH1."
+        },
+        "tokens": [
+          "--photo-frame-inset"
+        ],
+        "selected": "campaign-vivid",
+        "spec": {
+          "name": "Campaign vivid",
+          "treatment": "none — full colour, high vibrancy, no brand filter, duotone or tint",
+          "presentation": "white-framed exhibit cells on the red canvas; edge-to-edge cells on white",
+          "crop": "focal-point driven; 3:2 default cell aspect",
+          "overlayTextPolicy": "Do not set text over vivid imagery. Text lives on the red, pink, white or ink surface adjacent to the image.",
+          "sourcing": "Generated or licensed ONLY. ogilvy.com campaign photography is client IP and is never scraped or reused.",
+          "note": "The absence of a treatment IS the treatment — the work is shown as the client made it."
+        }
+      },
+      "elevation": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "live-site",
+          "source": "No box-shadow measured anywhere on ogilvy.com (2026-08-25 computed-style sweep). Operator-selected E1."
+        },
+        "tokens": [
+          "--rule-hairline",
+          "--elevation-shadow"
+        ],
+        "selected": "flat-hairline",
+        "spec": {
+          "name": "Flat + hairline",
+          "shadow": "none",
+          "borders": "1px hairline, #E2DEDF on white, rgba(255,255,255,0.35) on red",
+          "depthMechanism": "surface colour change and occlusion (type/image overlap) — never a shadow",
+          "note": "Print-faithful. A drop shadow anywhere in an Ogilvy deliverable is off-grammar."
+        }
+      },
+      "motion": {
+        "status": "approved",
+        "required": false,
+        "evidence": {
+          "tier": "live-site",
+          "source": "_build/reviews/evidence/ogilvy-home-mid.png — continuous 'NETWORK OF THE YEAR' marquee band plus scroll-driven settle reveals. Operator-selected MO2 + SM2."
+        },
+        "tokens": [
+          "--motion-settle-duration",
+          "--motion-ticker-duration",
+          "--motion-ease"
+        ],
+        "selected": "ticker-energy",
+        "spec": {
+          "name": "Ticker energy",
+          "primitives": [
+            {
+              "name": "ticker-band",
+              "desc": "Uppercase type band translating continuously at constant velocity within its own band; never eases, never stops.",
+              "duration": "9s per full cycle at 1920px",
+              "easing": "linear",
+              "surfaces": [
+                "section-opener",
+                "divider",
+                "closing"
+              ]
+            },
+            {
+              "name": "settle-reveal",
+              "desc": "Content rises ~14px and fades in, then rests. Surfaces themselves never move.",
+              "duration": "0.6s",
+              "easing": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+              "stagger": "80ms per element, per section"
+            }
+          ],
+          "continuity": "section-sequence — a section's reveals sequence on entry; the ticker runs continuously and independently.",
+          "prohibitions": [
+            "No parallax",
+            "No surface or background movement",
+            "No easing on the ticker",
+            "No looping on settle reveals"
+          ],
+          "staticCounterpart": "On static surfaces (render_pdf, render_pptx, render_deck stills) the ticker band renders as a static uppercase type-as-texture row at the same position — this is the one place the board's M3 device appears without being a selected motif. The Big O and ghost grid carry the static surfaces.",
+          "note": "Feeds render_motion and render_video directly; render_deck transitions use settle-reveal only."
+        }
+      }
+    }
+  },
+  "surfaceExpression": {
+    "presentation": {
+      "visualAxes": {
+        "density": "spacious",
+        "contrast": "high",
+        "symmetry": "balanced",
+        "geometry": "rectilinear",
+        "typeExpression": "editorial",
+        "imageTreatment": "documentary",
+        "motifProminence": "structural",
+        "colorRhythm": "mono-plus-single-accent",
+        "ornament": "restrained",
+        "energy": "expressive",
+        "depth": "layered",
+        "materiality": [
+          "matte"
+        ],
+        "continuity": "section-sequence"
+      },
+      "principles": [
+        "Single-accent discipline: the Ogilvy Red is the sole non-neutral; pink is a tint of it, never a second hue.",
+        "Red is a canvas, not only an accent — covers and heroes are full-bleed red fields.",
+        "Editorial serif/sans pairing carries hierarchy — restraint over ornament.",
+        "The work is exhibited, not decorated: content sits in a strict gallery grid.",
+        "Depth comes from occlusion and surface change, never from shadow."
+      ]
+    },
+    "document": {
+      "visualAxes": {
+        "density": "spacious",
+        "contrast": "high",
+        "symmetry": "balanced",
+        "geometry": "rectilinear",
+        "typeExpression": "editorial",
+        "imageTreatment": "documentary",
+        "motifProminence": "structural",
+        "colorRhythm": "mono-plus-single-accent",
+        "ornament": "restrained",
+        "energy": "expressive",
+        "depth": "layered",
+        "materiality": [
+          "matte"
+        ],
+        "continuity": "section-sequence"
+      },
+      "principles": [
+        "Single-accent discipline: the Ogilvy Red is the sole non-neutral; pink is a tint of it, never a second hue.",
+        "Red is a canvas, not only an accent — covers and heroes are full-bleed red fields.",
+        "Editorial serif/sans pairing carries hierarchy — restraint over ornament.",
+        "The work is exhibited, not decorated: content sits in a strict gallery grid.",
+        "Depth comes from occlusion and surface change, never from shadow."
+      ]
+    }
+  },
+  "plotly_theme": {
+    "colorway": [
+      "#231F20",
+      "#EB3F43",
+      "#231F20",
+      "#3F7A6A",
+      "#B98A3C",
+      "#6E2A3C"
+    ],
+    "baseTemplate": "plotly_white",
+    "font": {
+      "family": "Ogilvy Sans",
+      "color": "#231F20"
+    },
+    "titleFontSize": 18,
+    "gridColor": "#F4F4F4",
+    "sentiment": {
+      "positive": "#3F7A6A",
+      "negative": "#6E2A3C",
+      "neutral": "#6E6B6C"
+    }
+  },
+  "excalidraw_theme": {
+    "strokeColor": "#231F20",
+    "fillColors": [
+      "#231F20",
+      "#EB3F43",
+      "#231F20"
+    ],
+    "textColor": "#231F20",
+    "arrowColor": "#231F20",
+    "backgroundColor": "#FFFFFF",
+    "roughness": 0,
+    "headingFont": "Ogilvy Serif",
+    "bodyFont": "Ogilvy Sans"
+  },
+  "formatting": {
+    "aspectRatio": "16:9",
+    "slideMargin": "40pt",
+    "titleMargin": "60pt",
+    "contentMargin": "40pt"
+  },
+  "images": {
+    "manifest": [
+      {
+        "id": "red-telephone",
+        "source": "images/red-telephone.jpg",
+        "theme": "red-room",
+        "roles": [
+          "cover",
+          "hero"
+        ],
+        "hero": true,
+        "altText": "A glossy red rotary-dial telephone on a vivid red seamless, hard key light from upper left throwing one long crisp shadow to the right; the right half of the frame is left open for a title.",
+        "dimensions": {
+          "width": 1344,
+          "height": 768
+        },
+        "overlayPolicy": "none",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.33,
+            "y": 0.62
+          },
+          "textSafeZone": "right-safe"
+        },
+        "source_detail": {
+          "provenance": "generated",
+          "model": "gemini-2.5-flash-image",
+          "platform": "Vertex AI (project stromy-prod)",
+          "seed": 1000,
+          "variant": "01_red_telephone",
+          "generatedAt": "2026-08-26",
+          "rightsStatus": "stromy-owned",
+          "confidence": "high"
+        }
+      },
+      {
+        "id": "red-typewriter",
+        "source": "images/red-typewriter.jpg",
+        "theme": "red-room",
+        "roles": [
+          "closing"
+        ],
+        "hero": false,
+        "altText": "A red mechanical typewriter with black keys, three-quarter view on red seamless, glossy body catching a single hard key light.",
+        "dimensions": {
+          "width": 1184,
+          "height": 864
+        },
+        "overlayPolicy": "none",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.47,
+            "y": 0.55
+          },
+          "textSafeZone": "upper-third"
+        },
+        "source_detail": {
+          "provenance": "generated",
+          "model": "gemini-2.5-flash-image",
+          "platform": "Vertex AI (project stromy-prod)",
+          "seed": 1011,
+          "variant": "02_red_typewriter_v2",
+          "generatedAt": "2026-08-26",
+          "rightsStatus": "stromy-owned",
+          "confidence": "high"
+        }
+      },
+      {
+        "id": "red-boxes",
+        "source": "images/red-boxes.jpg",
+        "theme": "red-room",
+        "roles": [
+          "divider"
+        ],
+        "hero": false,
+        "altText": "Three stacked red lacquer boxes of decreasing size on red seamless, evenly lit so each lid reads as a distinct plane.",
+        "dimensions": {
+          "width": 1184,
+          "height": 864
+        },
+        "overlayPolicy": "none",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.56
+          },
+          "textSafeZone": "upper-third"
+        },
+        "source_detail": {
+          "provenance": "generated",
+          "model": "gemini-2.5-flash-image",
+          "platform": "Vertex AI (project stromy-prod)",
+          "seed": 1021,
+          "variant": "03_red_boxes_v2",
+          "generatedAt": "2026-08-26",
+          "rightsStatus": "stromy-owned",
+          "confidence": "high"
+        }
+      },
+      {
+        "id": "red-glasses",
+        "source": "images/red-glasses.jpg",
+        "theme": "red-room",
+        "roles": [
+          "section"
+        ],
+        "hero": false,
+        "altText": "Round red spectacles resting on red seamless, a hard diagonal light-break across the backdrop and lens caustics thrown onto the surface.",
+        "dimensions": {
+          "width": 1024,
+          "height": 1024
+        },
+        "overlayPolicy": "none",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.38,
+            "y": 0.47
+          },
+          "textSafeZone": "upper-third"
+        },
+        "source_detail": {
+          "provenance": "generated",
+          "model": "gemini-2.5-flash-image",
+          "platform": "Vertex AI (project stromy-prod)",
+          "seed": 1030,
+          "variant": "04_red_glasses",
+          "generatedAt": "2026-08-26",
+          "rightsStatus": "stromy-owned",
+          "confidence": "high"
+        }
+      },
+      {
+        "id": "red-ribbon",
+        "source": "images/red-ribbon.jpg",
+        "theme": "red-room",
+        "roles": [
+          "background",
+          "divider"
+        ],
+        "hero": false,
+        "altText": "A red satin ribbon curling in a low horizontal wave across the base of a deep red seamless, the upper two-thirds of the frame empty.",
+        "dimensions": {
+          "width": 1344,
+          "height": 768
+        },
+        "overlayPolicy": "none",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.78
+          },
+          "textSafeZone": "upper-third"
+        },
+        "source_detail": {
+          "provenance": "generated",
+          "model": "gemini-2.5-flash-image",
+          "platform": "Vertex AI (project stromy-prod)",
+          "seed": 1040,
+          "variant": "05_red_ribbon",
+          "generatedAt": "2026-08-26",
+          "rightsStatus": "stromy-owned",
+          "confidence": "high"
+        }
+      },
+      {
+        "id": "red-megaphone",
+        "source": "images/red-megaphone.jpg",
+        "theme": "red-room",
+        "roles": [
+          "section"
+        ],
+        "hero": false,
+        "altText": "A glossy red megaphone in profile on red seamless, bell facing right, anchored by a single hard shadow.",
+        "dimensions": {
+          "width": 1024,
+          "height": 1024
+        },
+        "overlayPolicy": "none",
+        "geometry": {
+          "focalPoint": {
+            "x": 0.5,
+            "y": 0.45
+          },
+          "textSafeZone": "upper-third"
+        },
+        "source_detail": {
+          "provenance": "generated",
+          "model": "gemini-2.5-flash-image",
+          "platform": "Vertex AI (project stromy-prod)",
+          "seed": 1051,
+          "variant": "06_red_megaphone_v2",
+          "generatedAt": "2026-08-26",
+          "rightsStatus": "stromy-owned",
+          "confidence": "high"
+        }
+      }
+    ]
+  },
+  "logo": {
+    "primary": "logos/logo.svg",
+    "white": "logos/logo-white.svg",
+    "png": "logos/logo-black.png",
+    "whitePng": "logos/logo-white.png",
+    "mark": "logos/favicon-192.png",
+    "favicon": "logos/favicon.ico",
+    "favicon32": "logos/favicon-32.png",
+    "appIcon": "logos/apple-touch-icon.png",
+    "ogImage": "logos/og-image.png",
+    "notes": "Primary SVG uses currentColor — renders ink on light, set color for dark; logo-white.* for dark/photo backgrounds; logo-red.svg for the brand's own on-white lockup (evidenced: ogilvy.com nav renders the wordmark in Ogilvy Red on white). No clean vector mark on the source site; favicon set reused from ogilvy.com.",
+    "red": "logos/logo-red.svg"
+  },
+  "templates": {
+    "docx": {
+      "styles": "templates/docx/styles.docx",
+      "letterhead": "templates/docx/letterhead.docx"
+    }
+  },
+  "fallbacksUsed": []
+}

@@ -1,0 +1,62 @@
+<!--
+  PDF page shell — Section divider.
+  Build script injects:
+    {{HERO_URL}}     — absolute file:// URL to images/heroes/<name>.hero-2x1.jpg
+    {{PART_LABEL}}   — e.g. "Part 02"
+    {{SECTION_TITLE}}— section title
+    {{TOKENS_CSS}}
+    {{FONT_FACES}}
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+{{TOKENS_CSS}}
+{{FONT_FACES}}
+
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  width: 210mm; height: 297mm;
+  color: white;
+  background:
+    linear-gradient(rgba(20,30,28,0.55), rgba(20,30,28,0.55)),
+    url("{{HERO_URL}}") center/cover;
+  font-family: var(--font-body);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40mm;
+}
+.part-label {
+  font-family: var(--font-mono);
+  font-size: 11pt;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 14pt;
+}
+h1 {
+  font-family: var(--font-display);
+  font-size: 56pt;
+  line-height: 1.05;
+  margin: 0;
+  color: white;
+}
+.motif {
+  margin-top: 20pt;
+}
+.motif .line-primary { border-top: 2pt solid var(--color-primary); width: 60mm; }
+.motif .line-accent  { border-top: 2pt solid var(--color-accent);  width: 30mm; margin-top: 4pt; }
+</style>
+</head>
+<body>
+  <div class="part-label">{{PART_LABEL}}</div>
+  <h1>{{SECTION_TITLE}}</h1>
+  <div class="motif">
+    <div class="line-primary"></div>
+    <div class="line-accent"></div>
+  </div>
+</body>
+</html>
