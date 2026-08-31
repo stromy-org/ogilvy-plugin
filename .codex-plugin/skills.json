@@ -1,0 +1,90 @@
+{
+  "_comment": "Codex skill selection + Codex-tuned descriptions for this plugin. Consumed by stromy-org/scripts/sync-codex-plugin-skills.py, which renders .codex-plugin/skills/<name>/SKILL.md. EDIT THIS FILE, then run ./scripts/sync.sh codex-skills.",
+  "_why_separate": "Codex caps its skill inventory at ~2% of the context window (8000 chars when unknown) and shortens or drops descriptions past that. This plugin's Claude-side skills/ carries 30 skills / 20260 chars of name+description -- roughly 2.5x over. .codex-plugin/plugin.json points `skills` at .codex-plugin/skills, which REPLACES the default skills/ root in Codex's loader (codex-rs/core-plugins/src/loader.rs :: plugin_skill_roots), so these descriptions are read ONLY by Codex and the Claude routing surface in skills/ is left untouched.",
+  "skills": {
+    "format-guide": {
+      "description": "Product guide for Stromy deliverables -- what to ask for, which format to pick, and what each render skill produces. Use when someone is unsure which format skill fits, or is new to the deliverable tooling."
+    },
+    "format-prepare-document": {
+      "description": "Plan a multi-section document before anything is rendered. Use FIRST when a branded PPTX, DOCX or PDF needs a section structure; hand the signed-off envelope to a format-* render skill. Not a renderer itself."
+    },
+    "format-pptx-hd": {
+      "description": "Create a NEW branded deck when a client charter exists -- server-rendered PPTX in the brand fonts. Use for pitch, investor, executive and ordinary branded decks. Do NOT use to edit or analyse an existing deck; that is format-pptx."
+    },
+    "format-pptx": {
+      "description": "Default PPTX skill: unbranded new decks, plus editing, analysis, OOXML, comments and speaker notes on any EXISTING deck. Use when a deck already exists or no brand is required."
+    },
+    "format-pdf-hd": {
+      "description": "Create a NEW branded PDF from HTML with the full web stack -- reports, one-pagers, proposals. Use when the PDF must carry the client brand. Not for reading or editing an existing PDF."
+    },
+    "format-pdf": {
+      "description": "Read, extract, merge, split and manipulate EXISTING PDF files, including text and table extraction. Use for PDF surgery, not for authoring a branded document."
+    },
+    "format-docx": {
+      "description": "Create, read and edit Word .docx files. Use on any mention of a Word doc, .docx, tracked changes, or a document that must open natively in Word."
+    },
+    "format-xlsx": {
+      "description": "Create, edit and analyse spreadsheets -- formulas, formatting, charts, data analysis. Use for .xlsx, Excel, or tabular data work."
+    },
+    "format-html-hd": {
+      "description": "Author a premium, fully self-contained branded HTML slide deck -- one .html file. Use when the client wants a web-openable deck rather than PowerPoint."
+    },
+    "format-html-reveal": {
+      "description": "Create a self-contained reveal.js HTML deck -- one downloadable .html with brand fonts and images embedded. Use for a presentable, shareable web deck."
+    },
+    "format-chart": {
+      "description": "Render brand-aware Plotly data-visualisation charts. Use when a chart is needed on its own or to embed in another deliverable."
+    },
+    "format-diagram": {
+      "description": "Generate branded diagrams -- process flows, architecture views, stakeholder maps, org charts, timelines, funnels. Use when a concept needs a picture inside a branded deliverable."
+    },
+    "format-mermaid": {
+      "description": "Create Mermaid diagrams for Markdown-based docs (GitHub, GitLab, wikis, blogs). Use when the diagram must stay as text in Markdown rather than a rendered image."
+    },
+    "format-motion": {
+      "description": "Author brand-aware motion across HTML surfaces -- animated decks and web pages. Use when a deliverable needs movement rather than a static page."
+    },
+    "format-video-hd": {
+      "description": "Author a premium branded explainer video -- a server-rendered MP4 with animated titles and kinetic text. Use when the ask is a video, not a deck."
+    },
+    "format-i18n": {
+      "description": "Keep a deliverable's language versions from drifting apart. Use when a document exists in several languages and you need to know exactly what changed where."
+    },
+    "do-guide": {
+      "description": "Guia de inicio para investigar el gobierno, el gasto publico y la legislacion de Republica Dominicana. Empieza aqui cuando no sepas que preguntar o que fuente oficial usar."
+    },
+    "do-gov-data": {
+      "description": "Orquestar una investigacion de asuntos publicos dominicanos combinando varias fuentes oficiales. Usar cuando la pregunta cruza contrataciones, presupuesto, leyes o jurisprudencia."
+    },
+    "do-procurement-watch": {
+      "description": "Monitorear y analizar contrataciones publicas dominicanas (DGCP): licitaciones por institucion o rubro, proveedores y montos. Usar para preguntas de compras del Estado."
+    },
+    "do-spend-accountability": {
+      "description": "Analizar el gasto publico dominicano: presupuestado frente a ejecutado, por institucion y periodo. Usar para preguntas de rendicion de cuentas o ejecucion presupuestaria."
+    },
+    "do-legislative-scan": {
+      "description": "Rastrear la actividad legislativa dominicana en ambas camaras: estado y cronologia de un proyecto de ley, y votaciones nominales. Usar para seguimiento legislativo."
+    },
+    "do-consolidated-law": {
+      "description": "Localizar y citar leyes, decretos, resoluciones y reglamentos dominicanos desde 1844 en la fuente oficial consolidada. Usar cuando se necesite el texto o la cita exacta."
+    },
+    "do-caselaw-watch": {
+      "description": "Investigar jurisprudencia dominicana: sentencias de la Suprema Corte de Justicia y del Tribunal Constitucional. Usar para precedentes y criterios judiciales."
+    },
+    "do-policy-landscape": {
+      "description": "Construir el panorama completo de un tema de politica publica dominicana cruzando todas las fuentes oficiales. Usar para un brief de contexto amplio, no para un dato puntual."
+    },
+    "getting-started": {
+      "local": true,
+      "description": "Day-0 setup and orientation for this plugin inside Codex -- confirm the MCP servers are reachable, learn how to invoke a skill, and find the right guide. Use when someone is new, asks how to get started, or a skill reports its server is unreachable."
+    }
+  },
+  "excluded": {
+    "_comment": "Deliberately NOT shipped to Codex, with the reason. Recorded here so each omission is a decision rather than an oversight.",
+    "asset-editor": "asset-broker is OAuth-gated and deliberately not declared for Codex (operator decision 2026-08-31); no server behind it in a Codex session.",
+    "asset-guide": "Same as asset-editor.",
+    "asset-feedback": "Same as asset-editor.",
+    "asset-workspace-setup": "Same as asset-editor.",
+    "format-workspace-memory": "Reads and writes the client's SharePoint workspace record through workspace-scoped tools that only exist in a Cowork workspace session. Would dead-end in Codex CLI."
+  }
+}
