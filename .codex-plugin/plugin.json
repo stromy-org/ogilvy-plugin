@@ -1,0 +1,40 @@
+{
+  "name": "ogilvy-plugin",
+  "version": "0.2.0",
+  "description": "Codex plugin for Ogilvy Dominicana branded deliverables (format skills via the stromy-format MCP) and Dominican Republic government-data intelligence (do-gov-data MCP)",
+  "author": {
+    "name": "Stromy",
+    "url": "https://github.com/stromy-org"
+  },
+  "homepage": "https://github.com/stromy-org/ogilvy-plugin",
+  "repository": "https://github.com/stromy-org/ogilvy-plugin",
+  "license": "UNLICENSED",
+  "keywords": [
+    "ogilvy",
+    "branded-deliverables",
+    "dominican-republic",
+    "government-data",
+    "public-affairs"
+  ],
+  "skills": "./.codex-plugin/skills",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Ogilvy Dominicana",
+    "shortDescription": "Branded deliverables and Dominican Republic government data",
+    "longDescription": "Produce Ogilvy-branded decks, documents, PDFs, spreadsheets, charts, diagrams and video through the hosted stromy-format renderer, and research Dominican Republic public affairs — procurement, budget execution, both chambers of Congress, consolidated law from 1844, and SCJ and Constitutional Court case law — through the do-gov-data MCP. Brand data ships inside the plugin; the government-data skills are in Spanish and start at do-guide.",
+    "developerName": "Stromy",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://stromy.com.au",
+    "defaultPrompt": [
+      "Build an Ogilvy-branded deck on this topic.",
+      "Investiga las licitaciones publicas de esta institucion.",
+      "Turn this brief into a branded PDF one-pager."
+    ],
+    "brandColor": "#EB3F43",
+    "screenshots": []
+  }
+}
