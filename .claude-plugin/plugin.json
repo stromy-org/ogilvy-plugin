@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "ogilvy-plugin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Claude Code plugin for Ogilvy Dominicana branded deliverables (format skills via stromy-format MCP) and Dominican Republic government-data intelligence (do-gov-data MCP)",
   "author": {
     "name": "stromy-org"
