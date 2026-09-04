@@ -56,6 +56,7 @@
   "fonts": {
     "heading": {
       "family": "Ogilvy Serif",
+      "rightsStatus": "restricted",
       "fallback": "Georgia, 'Times New Roman', serif",
       "embedFamily": "Playfair Display",
       "fallbackStack": [
@@ -68,6 +69,7 @@
     },
     "body": {
       "family": "Ogilvy Sans",
+      "rightsStatus": "restricted",
       "fallback": "'Helvetica Neue', Helvetica, Arial, sans-serif",
       "embedFamily": "Inter",
       "fallbackStack": [
@@ -78,9 +80,10 @@
       ],
       "webSafe": "Arial"
     },
-    "note": "Ogilvy Serif + Ogilvy Sans are PROPRIETARY custom typefaces (rightsStatus: restricted) — not redistributable and no OFL substitute selected, so no embedFamily. Server-side renders and web fall back to the documented stacks (Georgia / Helvetica Neue).",
+    "note": "Ogilvy Serif + Ogilvy Sans are PROPRIETARY custom typefaces (rightsStatus: restricted) — licensed to the brand and not redistributable by Stromy, so the shipped assets are the embeddable substitutes: Playfair Display for the serif/display roles and Inter for the sans/label roles, both OFL and present in the overlay. Where an embed is ignored — Office-for-web and other constrained renderers — the documented webSafe stacks apply (Georgia for serif roles, Arial for sans). PPTX is the one surface where this always degrades silently: an OOXML run carries a single font name with no fallback stack.",
     "label": {
       "family": "Ogilvy Sans",
+      "rightsStatus": "restricted",
       "fallback": "'Helvetica Neue', Helvetica, Arial, sans-serif",
       "embedFamily": "Inter",
       "weight": "600",
@@ -97,6 +100,7 @@
     },
     "wordmark": {
       "family": "Ogilvy Serif",
+      "rightsStatus": "restricted",
       "fallback": "Georgia, 'Times New Roman', serif",
       "embedFamily": "Playfair Display",
       "fallbackStack": [

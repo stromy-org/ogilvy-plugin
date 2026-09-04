@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "5749352849fd6d02dde7b667fb2595b1cc4a5dd06bfbcf6622bdf1b093d907bf",
+    "charterSha": "ee32bf4f8b339923d1beef974d40d25ae5c209a5eaea2daee4bd53bb7829f2ac",
     "compiler": "1.0"
   },
   "tier": "output",
@@ -43,7 +43,8 @@
         "Times New Roman",
         "serif"
       ],
-      "webSafe": "Georgia"
+      "webSafe": "Georgia",
+      "rightsStatus": "restricted"
     },
     "body": {
       "family": "Ogilvy Sans",
@@ -55,7 +56,8 @@
         "Helvetica",
         "sans-serif"
       ],
-      "webSafe": "Arial"
+      "webSafe": "Arial",
+      "rightsStatus": "restricted"
     },
     "label": {
       "family": "Ogilvy Sans",
@@ -69,6 +71,7 @@
         "sans-serif"
       ],
       "webSafe": "Arial",
+      "rightsStatus": "restricted",
       "case": "uppercase",
       "tracking": "0.16em"
     }
@@ -99,7 +102,7 @@
     },
     "company": {
       "name": "Ogilvy Dominicana",
-      "description": "Ogilvy Dominicana is the Dominican Republic office of the Ogilvy advertising and marketing communications network, operating from Santo Domingo and trading locally as Partners Ogilvy. It serves Dominican and regional clients with advertising, brand strategy, public relations, customer engagement, digital marketing and social media work, drawing on the wider Ogilvy network founded in 1948 by David Ogilvy and owned by WPP.",
+      "description": "Ogilvy Dominicana is the Dominican Republic office of the Ogilvy advertising and marketing communications network, operating from Santo Domingo. It serves Dominican and regional clients with advertising, brand strategy, public relations, customer engagement, digital marketing and social media work, drawing on the wider Ogilvy network founded in 1948 by David Ogilvy and owned by WPP.",
       "website": "https://www.ogilvyrd.com",
       "industries": [
         "Marketing and Advertising",
@@ -870,5 +873,55 @@
       "letterhead": "templates/docx/letterhead.docx"
     }
   },
-  "fallbacksUsed": []
+  "fallbacksUsed": [],
+  "token_roles": {
+    "surface": "--surface-gallery-white",
+    "surfaceAlt": "--surface-band-pink",
+    "elevation": "--elevation-shadow",
+    "radius": null,
+    "lineWeight": "--rule-hairline-weight",
+    "tracking": "--label-tracking",
+    "textStrong": "--color-text",
+    "textMuted": "--color-text-light",
+    "edge": "--rule-hairline"
+  },
+  "integrity": {
+    "compiler": "brand_compile.py",
+    "compiler_version": "1.0",
+    "key_set": [
+      "boilerplate",
+      "client_slug",
+      "colors",
+      "excalidraw_theme",
+      "expression",
+      "fallbacksUsed",
+      "formatting",
+      "generatedFrom",
+      "identity",
+      "images",
+      "logo",
+      "plotly_theme",
+      "schemaVersion",
+      "surfaceExpression",
+      "templates",
+      "tier",
+      "token_roles",
+      "tokens_css",
+      "typography",
+      "version",
+      "warnings"
+    ],
+    "visual_grammar_dimensions": [
+      "backgrounds",
+      "elevation",
+      "gradients",
+      "grid",
+      "iconography",
+      "motifs",
+      "motion",
+      "patterns",
+      "photo"
+    ],
+    "sha256": "10893d623e3c10f739cf9db6452e2506dafa341437ab19131cfa7d768f7e7f2f"
+  }
 }

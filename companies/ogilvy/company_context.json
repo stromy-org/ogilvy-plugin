@@ -1,13 +1,14 @@
 {
   "schemaVersion": 1,
   "generatedFrom": {
-    "profileSha": "1492197a2f9b331b946f32b8e9658ee4b2e76215eb3051a8b760b329add098a3",
+    "profileSha": "372e806390d85ee514793dd4836237181666a2095fcde02498bb453d60119b8d",
     "compiler": "1.0"
   },
   "company": {
     "name": "Ogilvy Dominicana",
     "shortName": "Ogilvy RD",
-    "description": "Ogilvy Dominicana is the Dominican Republic office of the Ogilvy advertising and marketing communications network, operating from Santo Domingo and trading locally as Partners Ogilvy. It serves Dominican and regional clients with advertising, brand strategy, public relations, customer engagement, digital marketing and social media work, drawing on the wider Ogilvy network founded in 1948 by David Ogilvy and owned by WPP.",
+    "tradingName": "Partners Ogilvy",
+    "description": "Ogilvy Dominicana is the Dominican Republic office of the Ogilvy advertising and marketing communications network, operating from Santo Domingo. It serves Dominican and regional clients with advertising, brand strategy, public relations, customer engagement, digital marketing and social media work, drawing on the wider Ogilvy network founded in 1948 by David Ogilvy and owned by WPP.",
     "tagline": "We inspire brands and people to impact the world.",
     "website": "https://www.ogilvyrd.com",
     "headquarters": {
@@ -21,6 +22,40 @@
     ],
     "publicContact": {
       "website": "https://www.ogilvyrd.com"
+    }
+  },
+  "provenance": {
+    "fields": {
+      "company.tradingName": {
+        "state": "unverified",
+        "checkedAt": "2026-09-01",
+        "url": "https://ogilvyrd.com/",
+        "kind": "directory_listing",
+        "sourceAuthority": "public_corpus",
+        "confidence": "low",
+        "freshness": "current",
+        "note": "A live read of ogilvyrd.com on 2026-09-01 found only 'Ogilvy' and 'Ogilvy | Dominicana'; 'Partners Ogilvy' appears in third-party directory listings only. KEPT, not deleted — it is probably true, and deleting a probably-true fact trades one error class for another. It was previously asserted as plain fact inside company.description, in the same compiled artifact whose expression block carries a six-entry evidence array; do not state it as the office's published name until a first-party source exists."
+      },
+      "company.shortName": {
+        "state": "unverified",
+        "checkedAt": "2026-09-01",
+        "url": "https://ogilvyrd.com/",
+        "kind": "directory_listing",
+        "sourceAuthority": "public_corpus",
+        "confidence": "low",
+        "freshness": "current",
+        "note": "'Ogilvy RD' is not published on ogilvyrd.com either (the site says 'Ogilvy | Dominicana'). Same evidentiary standing as tradingName; recorded so the next sweep re-checks it instead of trusting it."
+      },
+      "company.headquarters": {
+        "state": "verified-present",
+        "checkedAt": "2026-09-01",
+        "url": "https://ogilvyrd.com/",
+        "kind": "live_site_capture",
+        "sourceAuthority": "official_published",
+        "confidence": "high",
+        "freshness": "current",
+        "note": "Street address now published on the site and recorded in boilerplate.json; headquarters.street stays empty here only because this block carries city/region/country."
+      }
     }
   }
 }

@@ -1,11 +1,11 @@
 {
   "$schema": "../../schema/boilerplate.schema.json",
   "version": "1.0",
-  "description": "Boilerplate for the OGILVY DOMINICAN OFFICE (ogilvyrd.com), not the global Ogilvy network. address/email/phone are deliberately empty: they appear only in third-party directory listings, never on the client's own site, so they are not asserted onto rendered deliverables. Confirm with the client before filling them. Consumed at render time by every format skill.",
-  "address": "",
+  "description": "Boilerplate for the OGILVY DOMINICAN OFFICE (ogilvyrd.com), not the global Ogilvy network. Consumed at render time by every format skill. Per-key sourcing — including why a key is EMPTY — lives in `provenance`, never as prose here: a sentence freezes a one-time fact-check that nothing re-checks.",
+  "address": "C/ Maguá #3, Urb. Los Ríos, Distrito Nacional, República Dominicana",
   "website": "https://ogilvyrd.com",
   "email": "",
-  "phone": "",
+  "phone": "(809) 472-5050",
   "footer": {
     "show": true,
     "left": "Ogilvy Dominicana",
@@ -41,5 +41,48 @@
     "draftBadge": "DRAFT",
     "tocTitle": "Table of Contents",
     "appendixTitle": "Appendix"
+  },
+  "provenance": {
+    "fields": {
+      "address": {
+        "state": "verified-present",
+        "checkedAt": "2026-09-01",
+        "url": "https://ogilvyrd.com/",
+        "kind": "live_site_capture",
+        "sourceAuthority": "official_published",
+        "confidence": "high",
+        "freshness": "current",
+        "note": "Read verbatim from the office's own site on 2026-09-01. Supersedes the prior claim that the address appears only in third-party directory listings — four deliverables shipped with no contact block on that rationale (ORG-255)."
+      },
+      "phone": {
+        "state": "verified-present",
+        "checkedAt": "2026-09-01",
+        "url": "https://ogilvyrd.com/",
+        "kind": "live_site_capture",
+        "sourceAuthority": "official_published",
+        "confidence": "high",
+        "freshness": "current",
+        "note": "Read verbatim from the office's own site on 2026-09-01."
+      },
+      "email": {
+        "state": "verified-absent",
+        "checkedAt": "2026-09-01",
+        "url": "https://ogilvyrd.com/",
+        "kind": "live_site_capture",
+        "sourceAuthority": "official_published",
+        "confidence": "high",
+        "freshness": "current",
+        "note": "ogilvyrd.com publishes no generic inbox. EMPTY ON PURPOSE, and this record is the receipt: re-check the site rather than inferring one, and never synthesise info@/contacto@."
+      },
+      "website": {
+        "state": "verified-present",
+        "checkedAt": "2026-09-01",
+        "url": "https://ogilvyrd.com/",
+        "kind": "live_site_capture",
+        "sourceAuthority": "official_published",
+        "confidence": "high",
+        "freshness": "current"
+      }
+    }
   }
 }

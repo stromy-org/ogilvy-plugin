@@ -47,8 +47,9 @@ parallel construction. Energy without exclamation marks.
   **Ogilvy Advertising** (crear marcas y conectarlas en todos los canales) and
   **Ogilvy Consulting** (crecimiento a través de estrategia e innovación).
 - Let a strong claim stand on its own line without qualification.
-- Keep the local footing visible where it is true: the office has been building
-  Dominican brands since 1994.
+- Keep the local footing visible: the office writes as a Dominican agency, for a
+  Dominican market. Do not attach a founding year or a years-in-market figure —
+  none is verified for the Dominican office, and ogilvyrd.com publishes neither.
 
 ## Do not
 
@@ -63,6 +64,10 @@ parallel construction. Energy without exclamation marks.
 - Claim awards, rankings or network credentials that have not been verified for
   the **Dominican** office specifically. Global "Network of the Year" claims are
   a global fact and must not be restated as a local one.
+- State a founding year, a years-in-market count, a headcount, a client count or
+  any other firmographic for the Dominican office. `profile.json` leaves those
+  empty on purpose because no verified value exists; a figure that appears in a
+  voice anchor is a style exemplar, never a source of fact.
 - Name a client brand unless the source material shows it is publicly credited
   work.
 

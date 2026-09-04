@@ -30,9 +30,9 @@ qualifier, no exclamation mark. This is the house construction.
 
 ## Anchor — registro institucional local (construido en registro, no verbatim)
 
-> Construimos marcas dominicanas desde 1994. Conocemos este mercado porque
-> llevamos treinta años trabajando en él, y esa cercanía es la que convierte una
-> buena idea en una idea que aquí funciona.
+> Construimos marcas dominicanas. Conocemos este mercado porque trabajamos en
+> él todos los días, y esa cercanía es la que convierte una buena idea en una
+> idea que aquí funciona.
 
 ## Notas
 
@@ -43,3 +43,7 @@ qualifier, no exclamation mark. This is the house construction.
   real, consumidor, crecimiento desde la estrategia.
 - Sólo el primer bloque es verbatim. Los demás son ejemplos escritos en registro
   para calibrar el tono; no citarlos como material publicado por el cliente.
+- Los bloques construidos no contienen ni pueden contener datos verificables de
+  la firma (año de fundación, años en el mercado, número de clientes, premios).
+  Un ejemplo de estilo no es una fuente de hechos: si un dato hace falta, sale de
+  `profile.json`, nunca de un anchor.
