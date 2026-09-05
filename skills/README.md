@@ -1,4 +1,4 @@
-# Skills in Ogilvy Dominicana Deliverables
+# Skills in this plugin
 
 This directory holds the plugin's skills. Two kinds of skills live here:
 
