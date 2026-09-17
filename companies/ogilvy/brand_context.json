@@ -44,6 +44,7 @@
         "serif"
       ],
       "webSafe": "Georgia",
+      "webSafeAvailability": "web-safe",
       "rightsStatus": "restricted"
     },
     "body": {
@@ -57,6 +58,7 @@
         "sans-serif"
       ],
       "webSafe": "Arial",
+      "webSafeAvailability": "web-safe",
       "rightsStatus": "restricted"
     },
     "label": {
@@ -71,6 +73,7 @@
         "sans-serif"
       ],
       "webSafe": "Arial",
+      "webSafeAvailability": "web-safe",
       "rightsStatus": "restricted",
       "case": "uppercase",
       "tracking": "0.16em"
@@ -922,6 +925,6 @@
       "patterns",
       "photo"
     ],
-    "sha256": "10893d623e3c10f739cf9db6452e2506dafa341437ab19131cfa7d768f7e7f2f"
+    "sha256": "173886c788f16a9ac04c6c5df79472254a969b4e887d3b90691ee969b85d3fad"
   }
 }
