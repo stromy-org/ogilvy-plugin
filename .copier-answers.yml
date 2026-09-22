@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier; DO NOT edit manually.
-_commit: v1.0.2
+_commit: v1.2.0
 _src_path: gh:stromy-org/claude-plugin-template
 author_name: Stromy
 client_name: Ogilvy Dominicana
@@ -7,11 +7,13 @@ client_slug: ogilvy
 description: Claude Code plugin for Ogilvy Dominicana branded deliverables (format
     skills via stromy-format MCP) and Dominican Republic government-data intelligence
     (do-gov-data MCP)
+display_name: Ogilvy Dominicana
 enable_stromy_format: true
 github_org: stromy-org
 include_mcp: false
 include_node: true
 include_python: true
+marketplace_slug: ogilvy-plugin-marketplace
 mcp_servers:
 -   consumed_by:
     - claude
@@ -26,4 +28,5 @@ mcp_servers:
 plugin_name: Ogilvy Dominicana Deliverables
 plugin_slug: ogilvy-plugin
 provider_targets: claude
+repo_slug: ogilvy-plugin-plugin
 version: 0.1.0
