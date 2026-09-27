@@ -2,12 +2,22 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "ogilvy-plugin",
   "displayName": "Ogilvy Dominicana",
-  "version": "0.2.18",
-  "description": "Claude Code plugin for Ogilvy Dominicana branded deliverables (format skills via stromy-format MCP) and Dominican Republic government-data intelligence (do-gov-data MCP)",
+  "version": "0.2.19",
+  "description": "Plugin for Ogilvy Dominicana branded deliverables (format skills via stromy-format MCP) and Dominican Republic government-data intelligence (do-gov-data MCP)",
   "author": {
     "name": "stromy-org"
   },
+  "homepage": "https://github.com/stromy-org/ogilvy-plugin",
   "repository": "https://github.com/stromy-org/ogilvy-plugin",
   "license": "UNLICENSED",
-  "keywords": []
+  "keywords": [
+    "ogilvy",
+    "branded-deliverables",
+    "dominican-republic",
+    "government-data",
+    "public-affairs"
+  ],
+  "skills": [
+    "./.claude-plugin/skills"
+  ]
 }

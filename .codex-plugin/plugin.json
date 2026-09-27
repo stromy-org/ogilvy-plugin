@@ -1,10 +1,9 @@
 {
   "name": "ogilvy-plugin",
-  "version": "0.2.0",
-  "description": "Codex plugin for Ogilvy Dominicana branded deliverables (format skills via the stromy-format MCP) and Dominican Republic government-data intelligence (do-gov-data MCP)",
+  "version": "0.2.19",
+  "description": "Plugin for Ogilvy Dominicana branded deliverables (format skills via stromy-format MCP) and Dominican Republic government-data intelligence (do-gov-data MCP)",
   "author": {
-    "name": "Stromy",
-    "url": "https://github.com/stromy-org"
+    "name": "stromy-org"
   },
   "homepage": "https://github.com/stromy-org/ogilvy-plugin",
   "repository": "https://github.com/stromy-org/ogilvy-plugin",
@@ -16,8 +15,7 @@
     "government-data",
     "public-affairs"
   ],
-  "skills": "./.codex-plugin/skills",
-  "mcpServers": "./.mcp.json",
+  "mcpServers": "./mcp.json",
   "interface": {
     "displayName": "Ogilvy Dominicana",
     "shortDescription": "Branded deliverables and Dominican Republic government data",

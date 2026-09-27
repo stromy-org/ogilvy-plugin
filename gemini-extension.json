@@ -1,0 +1,13 @@
+{
+  "name": "ogilvy-plugin",
+  "version": "0.2.19",
+  "description": "Plugin for Ogilvy Dominicana branded deliverables (format skills via stromy-format MCP) and Dominican Republic government-data intelligence (do-gov-data MCP)",
+  "mcpServers": {
+    "stromy-format": {
+      "httpUrl": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"
+    },
+    "do-gov-data": {
+      "httpUrl": "https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
+    }
+  }
+}
