@@ -8,7 +8,7 @@ schema_version: 1
 identity:
   name: ogilvy-plugin
   display_name: Ogilvy Dominicana
-  version: 0.2.19
+  version: 0.2.20
   description: Plugin for Ogilvy Dominicana branded deliverables (format skills via stromy-format MCP)
     and Dominican Republic government-data intelligence (do-gov-data MCP)
   author:
