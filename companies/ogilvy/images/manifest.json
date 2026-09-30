@@ -1,0 +1,204 @@
+{
+  "version": 2,
+  "scope": "ogilvy-red-room",
+  "note": "Red Room (T1, the signature theme): single hero objects staged as studio still life on Ogilvy-red seamless, hard directional key light, one crisp shadow per frame. Generated 2026-08-26 on gemini-2.5-flash-image (Vertex, stromy-prod) from _build/brand-imagery/ogilvy/shotlist.json; 12 frames produced, 6 selected by William against a side-by-side board. UNTREATED BY DECISION — the vivid, fully saturated grade IS the approved look, so promotion was crop-only: no tint, no desaturation, no overlay. Do not apply a treatment downstream; overlayPolicy is 'none' on every entry. No Ogilvy campaign photography was scraped or reused — every frame is generated.",
+  "library": [
+    {
+      "id": "red-telephone",
+      "source": "images/red-telephone.jpg",
+      "theme": "red-room",
+      "roles": [
+        "cover",
+        "hero"
+      ],
+      "hero": true,
+      "altText": "A glossy red rotary-dial telephone on a vivid red seamless, hard key light from upper left throwing one long crisp shadow to the right; the right half of the frame is left open for a title.",
+      "dimensions": {
+        "width": 1344,
+        "height": 768
+      },
+      "overlayPolicy": "none",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.33,
+          "y": 0.62
+        },
+        "textSafeZone": "right-safe"
+      },
+      "source_detail": {
+        "provenance": "generated",
+        "model": "gemini-2.5-flash-image",
+        "platform": "Vertex AI (project stromy-prod)",
+        "seed": 1000,
+        "variant": "01_red_telephone",
+        "generatedAt": "2026-08-26",
+        "rightsStatus": "stromy-owned",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "red-typewriter",
+      "source": "images/red-typewriter.jpg",
+      "theme": "red-room",
+      "roles": [
+        "closing"
+      ],
+      "hero": false,
+      "altText": "A red mechanical typewriter with black keys, three-quarter view on red seamless, glossy body catching a single hard key light.",
+      "dimensions": {
+        "width": 1184,
+        "height": 864
+      },
+      "overlayPolicy": "none",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.47,
+          "y": 0.55
+        },
+        "textSafeZone": "upper-third"
+      },
+      "source_detail": {
+        "provenance": "generated",
+        "model": "gemini-2.5-flash-image",
+        "platform": "Vertex AI (project stromy-prod)",
+        "seed": 1011,
+        "variant": "02_red_typewriter_v2",
+        "generatedAt": "2026-08-26",
+        "rightsStatus": "stromy-owned",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "red-boxes",
+      "source": "images/red-boxes.jpg",
+      "theme": "red-room",
+      "roles": [
+        "divider"
+      ],
+      "hero": false,
+      "altText": "Three stacked red lacquer boxes of decreasing size on red seamless, evenly lit so each lid reads as a distinct plane.",
+      "dimensions": {
+        "width": 1184,
+        "height": 864
+      },
+      "overlayPolicy": "none",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.56
+        },
+        "textSafeZone": "upper-third"
+      },
+      "source_detail": {
+        "provenance": "generated",
+        "model": "gemini-2.5-flash-image",
+        "platform": "Vertex AI (project stromy-prod)",
+        "seed": 1021,
+        "variant": "03_red_boxes_v2",
+        "generatedAt": "2026-08-26",
+        "rightsStatus": "stromy-owned",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "red-glasses",
+      "source": "images/red-glasses.jpg",
+      "theme": "red-room",
+      "roles": [
+        "section"
+      ],
+      "hero": false,
+      "altText": "Round red spectacles resting on red seamless, a hard diagonal light-break across the backdrop and lens caustics thrown onto the surface.",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "overlayPolicy": "none",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.38,
+          "y": 0.47
+        },
+        "textSafeZone": "upper-third"
+      },
+      "source_detail": {
+        "provenance": "generated",
+        "model": "gemini-2.5-flash-image",
+        "platform": "Vertex AI (project stromy-prod)",
+        "seed": 1030,
+        "variant": "04_red_glasses",
+        "generatedAt": "2026-08-26",
+        "rightsStatus": "stromy-owned",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "red-ribbon",
+      "source": "images/red-ribbon.jpg",
+      "theme": "red-room",
+      "roles": [
+        "background",
+        "divider"
+      ],
+      "hero": false,
+      "altText": "A red satin ribbon curling in a low horizontal wave across the base of a deep red seamless, the upper two-thirds of the frame empty.",
+      "dimensions": {
+        "width": 1344,
+        "height": 768
+      },
+      "overlayPolicy": "none",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.78
+        },
+        "textSafeZone": "upper-third"
+      },
+      "source_detail": {
+        "provenance": "generated",
+        "model": "gemini-2.5-flash-image",
+        "platform": "Vertex AI (project stromy-prod)",
+        "seed": 1040,
+        "variant": "05_red_ribbon",
+        "generatedAt": "2026-08-26",
+        "rightsStatus": "stromy-owned",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "red-megaphone",
+      "source": "images/red-megaphone.jpg",
+      "theme": "red-room",
+      "roles": [
+        "section"
+      ],
+      "hero": false,
+      "altText": "A glossy red megaphone in profile on red seamless, bell facing right, anchored by a single hard shadow.",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "overlayPolicy": "none",
+      "geometry": {
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "textSafeZone": "upper-third"
+      },
+      "source_detail": {
+        "provenance": "generated",
+        "model": "gemini-2.5-flash-image",
+        "platform": "Vertex AI (project stromy-prod)",
+        "seed": 1051,
+        "variant": "06_red_megaphone_v2",
+        "generatedAt": "2026-08-26",
+        "rightsStatus": "stromy-owned",
+        "confidence": "high"
+      }
+    }
+  ],
+  "themes": [
+    "red-room"
+  ]
+}

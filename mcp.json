@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "stromy-format": {
+      "type": "streamable-http",
+      "url": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"
+    },
+    "do-gov-data": {
+      "type": "streamable-http",
+      "url": "https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
+    }
+  }
+}

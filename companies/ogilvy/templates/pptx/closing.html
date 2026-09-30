@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+  CLOSING slide shell — last slide of the deck.
+  Logo, optional tagline, contact line. See cover.html for token contract.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>closing</title>
+<link rel="stylesheet" href="../../tokens.css">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body {
+    width: 1920px; height: 1080px;
+    background: var(--color-background, #0a0a0a);
+    color: var(--color-text, #ffffff);
+    font-family: var(--font-body, sans-serif);
+    position: relative;
+    overflow: hidden;
+  }
+  .closing-image {
+    position: absolute; inset: 0;
+    background-size: cover; background-position: center;
+    z-index: 0;
+  }
+  .closing-overlay {
+    position: absolute; inset: 0;
+    background: var(--color-primary, #000);
+    opacity: 0.65;
+    z-index: 1;
+  }
+  .closing-content {
+    position: absolute; inset: 0;
+    padding: 96px 120px;
+    display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+    z-index: 2;
+  }
+  .closing-logo {
+    height: 120px;
+    margin-bottom: 48px;
+  }
+  .closing-tagline {
+    font-family: var(--font-heading, serif);
+    font-size: 56pt;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--color-text, #ffffff);
+    margin: 0 0 48px 0;
+    max-width: 1400px;
+  }
+  .closing-contact {
+    font-size: 22pt;
+    line-height: 1.5;
+    color: var(--color-text, #ffffff);
+    opacity: 0.8;
+  }
+  .closing-contact div { margin: 4px 0; }
+</style>
+</head>
+<body>
+  <div class="closing-image" data-anchor="closing.heroImage"></div>
+  <div class="closing-overlay" data-anchor="closing.overlay"></div>
+  <div class="closing-content">
+    <img class="closing-logo" data-anchor="closing.logo" alt="">
+    <h1 class="closing-tagline" data-anchor="closing.tagline">{{deck.closingTagline}}</h1>
+    <div class="closing-contact" data-anchor="closing.contact">
+      <div>{{client}}</div>
+      <div>{{website}}</div>
+      <div>{{email}}</div>
+    </div>
+  </div>
+</body>
+</html>

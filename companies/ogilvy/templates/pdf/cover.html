@@ -1,0 +1,85 @@
+<!--
+  PDF page shell — Cover.
+  Consumed by the `pdf-hd` skill. Build script injects:
+    {{HERO_URL}}   — absolute file:// URL to images/heroes/<name>.hero-2x1.jpg
+    {{LOGO_URL}}   — absolute file:// URL to logos/logo_white.svg
+    {{OVERLINE}}   — short uppercase label (e.g. "Strategic Brief · 2026")
+    {{TITLE}}      — main report title
+    {{SUBTITLE}}   — one-sentence scope/audience
+    {{META_LEFT}}  — e.g. "Prepared for: <client>"
+    {{META_MID}}   — e.g. "Prepared by: <author org>"
+    {{META_RIGHT}} — e.g. "2026-05-18"
+    {{TOKENS_CSS}} — full contents of tokens.css
+    {{FONT_FACES}} — @font-face declarations (from brand/fonts/) OR @import Google Fonts URL
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+{{TOKENS_CSS}}
+{{FONT_FACES}}
+
+@page { size: A4; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  width: 210mm; height: 297mm;
+  color: white;
+  background:
+    linear-gradient(rgba(20,30,28,0.52), rgba(20,30,28,0.52)),
+    url("{{HERO_URL}}") center/cover;
+  font-family: var(--font-body);
+  position: relative;
+}
+.logo { position: absolute; top: 18mm; left: 18mm; }
+.logo img { height: 32pt; }
+.block { position: absolute; bottom: 30mm; left: 18mm; right: 18mm; }
+.overline {
+  font-family: var(--font-mono);
+  font-size: 9pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 12pt;
+}
+h1 {
+  font-family: var(--font-display);
+  font-size: 44pt;
+  line-height: 1.05;
+  margin: 0;
+  color: white;
+  max-width: 70%;
+}
+.subtitle {
+  font-size: 13pt;
+  opacity: 0.85;
+  max-width: 60%;
+  margin-top: 16pt;
+}
+.meta {
+  position: absolute;
+  bottom: 14mm;
+  left: 18mm;
+  right: 18mm;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 8pt;
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+  <div class="logo"><img src="{{LOGO_URL}}" alt=""></div>
+  <div class="block">
+    <div class="overline">{{OVERLINE}}</div>
+    <h1>{{TITLE}}</h1>
+    <p class="subtitle">{{SUBTITLE}}</p>
+  </div>
+  <div class="meta">
+    <span>{{META_LEFT}}</span>
+    <span>{{META_MID}}</span>
+    <span>{{META_RIGHT}}</span>
+  </div>
+</body>
+</html>

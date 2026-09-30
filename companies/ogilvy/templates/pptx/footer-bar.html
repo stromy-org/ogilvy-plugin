@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+  FOOTER BAR — included by content.html (and any custom content layouts).
+  60px high. Renders mono logo on left, optional confidentiality text in
+  centre, page number on right. See cover.html for token contract.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>footer-bar</title>
+<link rel="stylesheet" href="../../tokens.css">
+<style>
+  html, body { margin: 0; padding: 0; }
+  .footer-bar {
+    width: 1920px; height: 60px;
+    padding: 0 80px;
+    border-top: 1px solid var(--color-background-alt, #e5e5e5);
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: var(--font-mono, var(--font-body, sans-serif));
+    font-size: 10pt;
+    color: var(--color-text, #666);
+    opacity: 0.7;
+    box-sizing: border-box;
+  }
+  .footer-bar .logo { height: 24px; }
+  .footer-bar .center {
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .footer-bar .right { letter-spacing: 1px; }
+</style>
+</head>
+<body>
+  <div class="footer-bar">
+    <img class="logo" data-anchor="footer.logo" alt="">
+    <span class="center" data-anchor="footer.center">{{confidentiality.text}}</span>
+    <span class="right" data-anchor="footer.right">{{page}} / {{pages}}</span>
+  </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "additional_banned_phrases": [
+    "soluciones 360",
+    "sinergias",
+    "pensamiento disruptivo",
+    "disruptivo",
+    "insights accionables",
+    "propuesta de valor diferenciadora",
+    "líder indiscutible",
+    "la mejor agencia",
+    "network of the year",
+    "revolucionario",
+    "game-changing",
+    "best-in-class",
+    "world-class",
+    "cutting-edge",
+    "unlock the power",
+    "supercharge"
+  ],
+  "additional_banned_substrings": [],
+  "notes": "Ogilvy Dominicana L2: additive-only bans on top of the L1 baseline. Three families — (a) hollow agency filler that the DR office's own copy avoids, (b) global-English hype imported from ogilvy.com, (c) unverified local superiority or award claims. 'network of the year' is banned specifically because it is a GLOBAL network fact that must never be restated as a Dominican-office credential. The tú-register and no-exclamation-marks rules are prose rules in voice-profile.md rather than substring bans."
+}

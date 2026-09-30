@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+  CONTENT slide shell — visible frame only.
+
+  Body region is intentionally empty. The LLM authoring a real deck composes
+  whatever layout the slide content needs inside .content-body. The frame
+  (title bar, footer-bar inclusion) is the only brand-consistent element.
+
+  See cover.html for the full token contract.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>content</title>
+<link rel="stylesheet" href="../../tokens.css">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body {
+    width: 1920px; height: 1080px;
+    background: var(--color-background, #ffffff);
+    color: var(--color-text, #1a1a1a);
+    font-family: var(--font-body, sans-serif);
+    position: relative;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+  .content-header {
+    padding: 48px 80px 24px;
+    border-bottom: 2px solid var(--color-accent, #ccc);
+  }
+  .content-eyebrow {
+    font-family: var(--font-mono, monospace);
+    font-size: 11pt;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: var(--color-accent, #999);
+    margin-bottom: 8px;
+  }
+  .content-title {
+    font-family: var(--font-heading, serif);
+    font-size: 36pt;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--color-text, #1a1a1a);
+    margin: 0;
+  }
+  .content-body {
+    flex: 1;
+    padding: 40px 80px 32px;
+    overflow: hidden;
+  }
+  .content-footer-slot {
+    flex: 0 0 60px;
+  }
+</style>
+</head>
+<body>
+  <div class="content-header">
+    <div class="content-eyebrow" data-anchor="content.eyebrow"></div>
+    <h1 class="content-title" data-anchor="content.title"></h1>
+  </div>
+  <div class="content-body" data-anchor="content.body"></div>
+  <div class="content-footer-slot" data-include="footer-bar.html"></div>
+</body>
+</html>
