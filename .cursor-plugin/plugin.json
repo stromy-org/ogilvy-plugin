@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "ogilvy-plugin",
   "displayName": "Ogilvy Dominicana",
   "version": "0.2.21",
@@ -18,6 +17,14 @@
     "public-affairs"
   ],
   "skills": [
-    "./.claude-plugin/skills"
-  ]
+    "./skills"
+  ],
+  "mcpServers": {
+    "stromy-format": {
+      "url": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"
+    },
+    "do-gov-data": {
+      "url": "https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
+    }
+  }
 }
