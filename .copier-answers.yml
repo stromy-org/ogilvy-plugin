@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier; DO NOT edit manually.
-_commit: v1.2.0
+_commit: v1.7.0
 _src_path: gh:stromy-org/claude-plugin-template
 author_name: Stromy
 client_name: Ogilvy Dominicana
@@ -16,7 +16,14 @@ include_python: true
 marketplace_slug: ogilvy-plugin-marketplace
 mcp_servers:
 -   consumed_by:
+    - openai
+    - codex
     - claude
+    - cursor
+    - copilot
+    - vscode
+    - kiro
+    - gemini
     name: do-gov-data
     notes: Dominican Republic government open-data MCP (ORG-PLAN-199) — procurement
         (DGCP), budget execution, both chambers with roll-call votes, consolidated
@@ -27,6 +34,6 @@ mcp_servers:
     url: https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp
 plugin_name: Ogilvy Dominicana Deliverables
 plugin_slug: ogilvy-plugin
-provider_targets: claude
+provider_targets: openai,codex,claude,cursor,copilot,vscode,kiro,gemini
 repo_slug: ogilvy-plugin-plugin
 version: 0.1.0
