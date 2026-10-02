@@ -7,7 +7,11 @@
       "style": "normal",
       "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
       "mime": "font/ttf",
-      "name": "Inter[opsz,wght].ttf"
+      "name": "Inter[opsz,wght].ttf",
+      "weight_range": [
+        100,
+        900
+      ]
     },
     {
       "family": "Ogilvy Serif",
@@ -15,7 +19,11 @@
       "style": "normal",
       "sha256": "c40f2293766a503bc70cce9e512ef844a4ccb7cbcde792fe2ea31d191917d8d6",
       "mime": "font/ttf",
-      "name": "PlayfairDisplay[wght].ttf"
+      "name": "PlayfairDisplay[wght].ttf",
+      "weight_range": [
+        400,
+        900
+      ]
     }
   ],
   "logos": [
@@ -153,8 +161,10 @@
     }
   ],
   "brand_context": {
-    "sha256": "29bf8e5cc8c240e0fdc47a7338ce7b3661b92d2f249593f7ee4e79e349e8325b",
+    "sha256": null,
     "mime": "application/json",
-    "bytes": 38428
+    "bytes": 38428,
+    "pending_upload": "29bf8e5cc8c240e0fdc47a7338ce7b3661b92d2f249593f7ee4e79e349e8325b",
+    "reason": "no remote upload: local backend or dry-run"
   }
 }
