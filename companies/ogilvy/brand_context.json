@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "ee32bf4f8b339923d1beef974d40d25ae5c209a5eaea2daee4bd53bb7829f2ac",
+    "charterSha": "ac0fd9433042a766728c25f37eace8dd2b043502852162fc7bbdd283bdad02b2",
     "compiler": "1.0"
   },
   "tier": "output",
@@ -144,7 +144,7 @@
         "note": "Tier-0 Brandfetch: accent #EB3F43, dark #231F20, light #FFFFFF; fonts Ogilvy Serif/Sans (origin custom); qualityScore 0.997, claimed."
       },
       {
-        "path": "_build/reviews/evidence/ogilvy-home-viewport.png",
+        "path": ".build-history/evidence/ogilvy-home-viewport.png",
         "kind": "live_site_capture",
         "sourceAuthority": "official_published",
         "confidence": "high",
@@ -153,7 +153,7 @@
         "note": "2026-08-25 capture. Full-bleed red canvas carrying a 4-column gallery grid with the giant white serif wordmark overlapping it. Establishes red-as-canvas and the gallery grid."
       },
       {
-        "path": "_build/reviews/evidence/ogilvy-home-mid.png",
+        "path": ".build-history/evidence/ogilvy-home-mid.png",
         "kind": "live_site_capture",
         "sourceAuthority": "official_published",
         "confidence": "high",
@@ -162,7 +162,7 @@
         "note": "2026-08-25 capture. Vertical red→pink→white section wash; scroll-settle statement reveal; oversized uppercase ticker rows with an image breaking through the type."
       },
       {
-        "path": "_build/reviews/evidence/ogilvy-home-lower.png",
+        "path": ".build-history/evidence/ogilvy-home-lower.png",
         "kind": "live_site_capture",
         "sourceAuthority": "official_published",
         "confidence": "high",
@@ -171,7 +171,7 @@
         "note": "2026-08-25 capture. White gallery canvas with vivid untreated campaign photography; hairline nav rule; wordmark rendered in Ogilvy Red on white (source for logo-red.svg)."
       },
       {
-        "path": "_build/reviews/OGILVY-Enhancement-Board.html",
+        "path": ".build-history/enhancement-board.html",
         "kind": "operator_review_gate",
         "sourceAuthority": "co_created",
         "confidence": "high",
@@ -236,7 +236,7 @@
         "required": false,
         "evidence": {
           "tier": "live-site",
-          "source": "_build/reviews/evidence/ogilvy-home-{viewport,mid,lower}.png (2026-08-25) — full-bleed #EB3F43 hero, white gallery sections, #FBCECE panels. Operator-selected B1 on OGILVY-Enhancement-Board.html."
+          "source": ".build-history/evidence/ogilvy-home-{viewport,mid,lower}.png (2026-08-25) — full-bleed #EB3F43 hero, white gallery sections, #FBCECE panels. Operator-selected B1 on the enhancement board (.build-history/enhancement-board.html)."
         },
         "tokens": [
           "--color-background",
@@ -303,7 +303,7 @@
         "required": false,
         "evidence": {
           "tier": "live-site",
-          "source": "_build/reviews/evidence/ogilvy-home-mid.png — vertical red→pink→white wash at the section transition. Operator-selected G1."
+          "source": ".build-history/evidence/ogilvy-home-mid.png — vertical red→pink→white wash at the section transition. Operator-selected G1."
         },
         "tokens": [
           "--gradient-section-wash"
@@ -342,7 +342,7 @@
         "required": false,
         "evidence": {
           "tier": "live-site",
-          "source": "_build/reviews/evidence/ogilvy-home-{viewport,lower}.png — strict 4-column thumbnail grid with equal gutters on both red and white canvases. Operator-selected GR1."
+          "source": ".build-history/evidence/ogilvy-home-{viewport,lower}.png — strict 4-column thumbnail grid with equal gutters on both red and white canvases. Operator-selected GR1."
         },
         "tokens": [
           "--grid-columns",
@@ -365,7 +365,7 @@
         "required": false,
         "evidence": {
           "tier": "live-site",
-          "source": "_build/reviews/evidence/ogilvy-home-viewport.png — the giant serif wordmark overlapping the gallery grid. Glyph extracted from the canonical logos/logo.svg by _build/reviews/build-motifs.py (not redrawn). Operator-selected M1."
+          "source": ".build-history/evidence/ogilvy-home-viewport.png — the giant serif wordmark overlapping the gallery grid. Glyph extracted from the canonical logos/logo.svg by the build-time motif script (not preserved) (not redrawn). Operator-selected M1."
         },
         "assets": [
           "assets/svg/motif-big-o.svg",
@@ -480,7 +480,7 @@
         "required": false,
         "evidence": {
           "tier": "live-site",
-          "source": "_build/reviews/evidence/ogilvy-home-lower.png — vivid full-colour campaign work presented as framed exhibits. Operator-selected PH1."
+          "source": ".build-history/evidence/ogilvy-home-lower.png — vivid full-colour campaign work presented as framed exhibits. Operator-selected PH1."
         },
         "tokens": [
           "--photo-frame-inset"
@@ -521,7 +521,7 @@
         "required": false,
         "evidence": {
           "tier": "live-site",
-          "source": "_build/reviews/evidence/ogilvy-home-mid.png — continuous 'NETWORK OF THE YEAR' marquee band plus scroll-driven settle reveals. Operator-selected MO2 + SM2."
+          "source": ".build-history/evidence/ogilvy-home-mid.png — continuous 'NETWORK OF THE YEAR' marquee band plus scroll-driven settle reveals. Operator-selected MO2 + SM2."
         },
         "tokens": [
           "--motion-settle-duration",
@@ -929,6 +929,6 @@
       "photo"
     ],
     "images_count": 6,
-    "sha256": "29bcdc4a9cfa4ad5d5fbdcce928e4eba29562e7ea3363c49d88b234db78c57cd"
+    "sha256": "e6a2fef7770bb4ba367256b642b2e8c74a9dc43a920e67244681bf8e4372d6ea"
   }
 }
