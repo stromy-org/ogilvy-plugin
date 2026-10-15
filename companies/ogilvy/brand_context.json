@@ -684,7 +684,13 @@
             "x": 0.33,
             "y": 0.62
           },
-          "textSafeZone": "right-safe"
+          "textSafeZone": "right-safe",
+          "subjectBox": {
+            "x": 0.12,
+            "y": 0.35,
+            "w": 0.38,
+            "h": 0.5
+          }
         },
         "source_detail": {
           "provenance": "generated",
@@ -716,7 +722,13 @@
             "x": 0.47,
             "y": 0.55
           },
-          "textSafeZone": "upper-third"
+          "textSafeZone": "upper-third",
+          "subjectBox": {
+            "x": 0.15,
+            "y": 0.2,
+            "w": 0.7,
+            "h": 0.6
+          }
         },
         "source_detail": {
           "provenance": "generated",
@@ -748,7 +760,13 @@
             "x": 0.5,
             "y": 0.56
           },
-          "textSafeZone": "upper-third"
+          "textSafeZone": "upper-third",
+          "subjectBox": {
+            "x": 0.28,
+            "y": 0.3,
+            "w": 0.44,
+            "h": 0.55
+          }
         },
         "source_detail": {
           "provenance": "generated",
@@ -780,7 +798,13 @@
             "x": 0.38,
             "y": 0.47
           },
-          "textSafeZone": "upper-third"
+          "textSafeZone": "upper-third",
+          "subjectBox": {
+            "x": 0.12,
+            "y": 0.3,
+            "w": 0.48,
+            "h": 0.45
+          }
         },
         "source_detail": {
           "provenance": "generated",
@@ -813,7 +837,13 @@
             "x": 0.5,
             "y": 0.78
           },
-          "textSafeZone": "upper-third"
+          "textSafeZone": "upper-third",
+          "subjectBox": {
+            "x": 0.0,
+            "y": 0.6,
+            "w": 1.0,
+            "h": 0.3
+          }
         },
         "source_detail": {
           "provenance": "generated",
@@ -845,7 +875,13 @@
             "x": 0.5,
             "y": 0.45
           },
-          "textSafeZone": "upper-third"
+          "textSafeZone": "upper-third",
+          "subjectBox": {
+            "x": 0.25,
+            "y": 0.25,
+            "w": 0.5,
+            "h": 0.55
+          }
         },
         "source_detail": {
           "provenance": "generated",
@@ -929,6 +965,6 @@
       "photo"
     ],
     "images_count": 6,
-    "sha256": "e6a2fef7770bb4ba367256b642b2e8c74a9dc43a920e67244681bf8e4372d6ea"
+    "sha256": "1db8b4b56c1ac5df39759bd411e9680144111c279af1d5c90e092d5b60d8b5cb"
   }
 }
