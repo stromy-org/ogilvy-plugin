@@ -16,6 +16,12 @@
       "url": "https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp",
       "_consumed_by": ["openai", "codex", "claude", "cursor", "copilot", "vscode", "kiro", "gemini"],
       "_notes": "Dominican Republic government open-data MCP (ORG-PLAN-199) \u2014 procurement (DGCP), budget execution, both chambers with roll-call votes, consolidated law from 1844, SCJ + TC caselaw, audits, open-data discovery, regulators, macro. Unauthenticated, so plugin-declared \u2014 no connector step. Skills are Spanish; start at do-guide. Composes with stromy-format for rendering."
+    },
+    "asset-broker": {
+      "transport": "http",
+      "url": "https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp",
+      "_consumed_by": ["claude"],
+      "_connector": true
     }
   }
 }

@@ -8,6 +8,10 @@
     "do-gov-data": {
       "type": "http",
       "url": "https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp"
+    },
+    "asset-broker": {
+      "type": "http",
+      "url": "https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp"
     }
   }
 }
