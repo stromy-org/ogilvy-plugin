@@ -32,6 +32,10 @@ mcp_servers:
         Spanish; start at do-guide. Composes with stromy-format for rendering.
     transport: http
     url: https://do-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp
+- connector: true
+  name: asset-broker
+  transport: http
+  url: https://asset-broker-mcp.redbeach-6781a121.northeurope.azurecontainerapps.io/mcp
 plugin_name: Ogilvy Dominicana Deliverables
 plugin_slug: ogilvy-plugin
 provider_targets: openai,codex,claude,cursor,copilot,vscode,kiro,gemini
