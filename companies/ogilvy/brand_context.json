@@ -927,6 +927,23 @@
     "textMuted": "--color-text-light",
     "edge": "--rule-hairline"
   },
+  "presentation": {
+    "backgrounds": {
+      "gradient-dark": "pptx-assets/gradient-dark.png",
+      "gradient-accent": "pptx-assets/gradient-accent.png"
+    },
+    "margins": {
+      "slide": "40pt",
+      "title": "60pt",
+      "content": "40pt"
+    },
+    "aspectRatio": "16:9",
+    "textFit": {
+      "lintFont": "Arial",
+      "widen": 1.04,
+      "lineHeight": 1.22
+    }
+  },
   "integrity": {
     "compiler": "brand_compile.py",
     "compiler_version": "1.0",
@@ -943,6 +960,7 @@
       "images",
       "logo",
       "plotly_theme",
+      "presentation",
       "schemaVersion",
       "surfaceExpression",
       "templates",
@@ -965,6 +983,6 @@
       "photo"
     ],
     "images_count": 6,
-    "sha256": "1db8b4b56c1ac5df39759bd411e9680144111c279af1d5c90e092d5b60d8b5cb"
+    "sha256": "83a7d5c8e36b559161b3b35bae62a3f77ee4c52d91fcffb6ce8cc4cab0096dfe"
   }
 }
