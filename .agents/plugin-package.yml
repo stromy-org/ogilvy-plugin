@@ -8,7 +8,7 @@ schema_version: 1
 identity:
   name: ogilvy-plugin
   display_name: Ogilvy Dominicana
-  version: 0.2.31
+  version: 0.2.36
   description: Plugin for Ogilvy Dominicana branded deliverables (format skills via stromy-format MCP)
     and Dominican Republic government-data intelligence (do-gov-data MCP)
   author:
@@ -56,9 +56,7 @@ portable_capabilities:
     - format-docx-hd
     - format-guide
     - format-html-hd
-    - format-html-reveal
     - format-i18n
-    - format-mermaid
     - format-motion
     - format-pdf
     - format-pdf-hd
@@ -90,9 +88,7 @@ skills:
   - format-docx-hd
   - format-guide
   - format-html-hd
-  - format-html-reveal
   - format-i18n
-  - format-mermaid
   - format-motion
   - format-pdf
   - format-pdf-hd
@@ -162,14 +158,10 @@ skills:
       Use for .xlsx, Excel, or tabular data work.
     format-html-hd: Author a premium, fully self-contained branded HTML slide deck -- one .html file.
       Use when the client wants a web-openable deck rather than PowerPoint.
-    format-html-reveal: Create a self-contained reveal.js HTML deck -- one downloadable .html with brand
-      fonts and images embedded. Use for a presentable, shareable web deck.
     format-chart: Render brand-aware Plotly data-visualisation charts. Use when a chart is needed on its
       own or to embed in another deliverable.
     format-diagram: Generate branded diagrams -- process flows, architecture views, stakeholder maps,
       org charts, timelines, funnels. Use when a concept needs a picture inside a branded deliverable.
-    format-mermaid: Create Mermaid diagrams for Markdown-based docs (GitHub, GitLab, wikis, blogs). Use
-      when the diagram must stay as text in Markdown rather than a rendered image.
     format-motion: Author brand-aware motion across HTML surfaces -- animated decks and web pages. Use
       when a deliverable needs movement rather than a static page.
     format-video-hd: Author a premium branded explainer video -- a server-rendered MP4 with animated titles
