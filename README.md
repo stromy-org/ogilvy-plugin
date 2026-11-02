@@ -1,7 +1,6 @@
 # Ogilvy Dominicana Deliverables
 
-Branded deliverables (format skills via the stromy-format MCP) and Dominican Republic
-government-data intelligence (do-gov-data MCP), for **Claude Code and OpenAI Codex**.
+Branded deliverables (format skills via the stromy-format MCP), for **Claude Code and OpenAI Codex**.
 
 This is one folder serving two agents. The manifests live at paths that cannot collide,
 so a single repo, skill source and brand overlay reaches both:
@@ -47,7 +46,7 @@ Verify:
 
 ```bash
 codex plugin list | grep ogilvy      # should read "installed"
-codex mcp list                       # stromy-format and do-gov-data, enabled
+codex mcp list                       # stromy-format, enabled
 codex debug prompt-input | grep -c 'ogilvy-plugin:'   # 25
 ```
 

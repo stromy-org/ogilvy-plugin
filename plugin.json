@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ogilvy-plugin",
   "version": "0.2.37",
-  "description": "Plugin for Ogilvy Dominicana branded deliverables (format skills via stromy-format MCP) and Dominican Republic government-data intelligence (do-gov-data MCP)",
+  "description": "Plugin for Ogilvy Dominicana branded deliverables (format skills via stromy-format MCP)",
   "author": {
     "name": "stromy-org"
   },
@@ -20,8 +20,8 @@
     "com.openai": {
       "interface": {
         "displayName": "Ogilvy Dominicana",
-        "shortDescription": "Branded deliverables and Dominican Republic government data",
-        "longDescription": "Produce Ogilvy-branded decks, documents, PDFs, spreadsheets, charts, diagrams and video through the hosted stromy-format renderer, and research Dominican Republic public affairs — procurement, budget execution, both chambers of Congress, consolidated law from 1844, and SCJ and Constitutional Court case law — through the do-gov-data MCP. Brand data ships inside the plugin; the government-data skills are in Spanish and start at do-guide.",
+        "shortDescription": "Branded deliverables",
+        "longDescription": "Produce Ogilvy-branded decks, documents, PDFs, spreadsheets, charts, diagrams and video through the hosted stromy-format renderer. Brand data ships inside the plugin.",
         "developerName": "Stromy",
         "category": "Productivity",
         "capabilities": [
