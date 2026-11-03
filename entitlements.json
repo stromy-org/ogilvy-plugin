@@ -3,12 +3,11 @@
   "entitled": [
     "asset-broker",
     "asset-broker-mcp",
-    "do-gov-data",
     "stromy-format"
   ],
-  "generated_at": "2026-10-29T17:40:47Z",
-  "parent_sha": "656f25d429b4393800a3e2a6750f80d420294153",
+  "generated_at": "2026-11-03T16:19:35Z",
+  "parent_sha": "a3fb301fc8197d5424f49f89878cc56b15098187",
   "repo": "stromy-org/ogilvy-plugin",
   "schema": 1,
-  "seq": 2
+  "seq": 3
 }
