@@ -8,7 +8,7 @@ schema_version: 1
 identity:
   name: ogilvy-plugin
   display_name: Ogilvy Dominicana
-  version: 0.2.37
+  version: 0.2.39
   description: Plugin for Ogilvy Dominicana branded deliverables (format skills via stromy-format MCP)
   author:
     name: stromy-org

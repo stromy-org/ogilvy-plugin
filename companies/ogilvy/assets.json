@@ -160,10 +160,18 @@
       "mime": "image/jpeg"
     }
   ],
-  "templates": [],
+  "templates": [
+    {
+      "name": "styles.docx",
+      "sha256": "0f67c928774e253acd399b3530d59d65493902208c82c401474de526435c37d0",
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "role": "template",
+      "kind": "docx"
+    }
+  ],
   "brand_context": {
-    "sha256": "cb8772c4d35265cbd7fb2ccf6bce6bd0ea7172a49ae79a15bd86f22224b50023",
+    "sha256": "869021a4f854e9607d9e0457ee2cfd615d8a9b65482cddb5a1be13ec731c0bc2",
     "mime": "application/json",
-    "bytes": 41738
+    "bytes": 44692
   }
 }

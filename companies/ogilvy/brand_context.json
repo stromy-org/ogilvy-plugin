@@ -722,7 +722,9 @@
           "generatedAt": "2026-08-26",
           "rightsStatus": "stromy-owned",
           "confidence": "high"
-        }
+        },
+        "sha256": "2e23156b740f73b2f31f9c9e14a12ed738b44dba1b2414c59a37381c40e3f225",
+        "mime": "image/jpeg"
       },
       {
         "id": "red-typewriter",
@@ -760,7 +762,9 @@
           "generatedAt": "2026-08-26",
           "rightsStatus": "stromy-owned",
           "confidence": "high"
-        }
+        },
+        "sha256": "3c806e106f056208612bf1785add018e5bc225fb25f7cf8fe5af178958ab8f0c",
+        "mime": "image/jpeg"
       },
       {
         "id": "red-boxes",
@@ -798,7 +802,9 @@
           "generatedAt": "2026-08-26",
           "rightsStatus": "stromy-owned",
           "confidence": "high"
-        }
+        },
+        "sha256": "1aec6ef2836f93508d395e2e4c34dbd660c8fabcb9ce7508118786e22fe4362a",
+        "mime": "image/jpeg"
       },
       {
         "id": "red-glasses",
@@ -836,7 +842,9 @@
           "generatedAt": "2026-08-26",
           "rightsStatus": "stromy-owned",
           "confidence": "high"
-        }
+        },
+        "sha256": "0dbee2c0ec456605448651ea1d57e5f34108af0971630c16ca9970e1ebd751da",
+        "mime": "image/jpeg"
       },
       {
         "id": "red-ribbon",
@@ -875,7 +883,9 @@
           "generatedAt": "2026-08-26",
           "rightsStatus": "stromy-owned",
           "confidence": "high"
-        }
+        },
+        "sha256": "4e58c66be6f8ff9cc2229aed6531d41ad3e03a4affcdb0e799b07d4ff2d703a2",
+        "mime": "image/jpeg"
       },
       {
         "id": "red-megaphone",
@@ -913,7 +923,9 @@
           "generatedAt": "2026-08-26",
           "rightsStatus": "stromy-owned",
           "confidence": "high"
-        }
+        },
+        "sha256": "2b80bc314259860aba25d2098f59c5b010223f3b880554b03dd923fd5c14e757",
+        "mime": "image/jpeg"
       }
     ]
   },
@@ -1041,6 +1053,68 @@
       }
     }
   },
+  "libraryHandles": [
+    {
+      "path": "images/red-boxes.jpg",
+      "sha256": "1aec6ef2836f93508d395e2e4c34dbd660c8fabcb9ce7508118786e22fe4362a",
+      "mime": "image/jpeg",
+      "libraryId": "red-boxes"
+    },
+    {
+      "path": "images/red-glasses.jpg",
+      "sha256": "0dbee2c0ec456605448651ea1d57e5f34108af0971630c16ca9970e1ebd751da",
+      "mime": "image/jpeg",
+      "libraryId": "red-glasses"
+    },
+    {
+      "path": "images/red-megaphone.jpg",
+      "sha256": "2b80bc314259860aba25d2098f59c5b010223f3b880554b03dd923fd5c14e757",
+      "mime": "image/jpeg",
+      "libraryId": "red-megaphone"
+    },
+    {
+      "path": "images/red-ribbon.jpg",
+      "sha256": "4e58c66be6f8ff9cc2229aed6531d41ad3e03a4affcdb0e799b07d4ff2d703a2",
+      "mime": "image/jpeg",
+      "libraryId": "red-ribbon"
+    },
+    {
+      "path": "images/red-telephone.jpg",
+      "sha256": "2e23156b740f73b2f31f9c9e14a12ed738b44dba1b2414c59a37381c40e3f225",
+      "mime": "image/jpeg",
+      "libraryId": "red-telephone"
+    },
+    {
+      "path": "images/red-typewriter.jpg",
+      "sha256": "3c806e106f056208612bf1785add018e5bc225fb25f7cf8fe5af178958ab8f0c",
+      "mime": "image/jpeg",
+      "libraryId": "red-typewriter"
+    },
+    {
+      "path": "pptx-assets/gradient-accent.png",
+      "sha256": "e89877b2851dcf113b9d7be4d5ab88c717101cd7e4a1d8d6635dd00b916c0cdd",
+      "mime": "image/png",
+      "libraryId": "pptx-assets-gradient-accent.png"
+    },
+    {
+      "path": "pptx-assets/gradient-dark.png",
+      "sha256": "4ba4b6821cb1099808c090444997e1da9d6b144071453dac63487e13c7bf8ac2",
+      "mime": "image/png",
+      "libraryId": "pptx-assets-gradient-dark.png"
+    },
+    {
+      "path": "templates/docx/letterhead.docx",
+      "sha256": "5286f664b4e1922dcdda57738fe2ad33ad8a5a3d4c2618612356bb06c0322d4a",
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "libraryId": "templates-docx-letterhead.docx"
+    },
+    {
+      "path": "templates/docx/styles.docx",
+      "sha256": "0f67c928774e253acd399b3530d59d65493902208c82c401474de526435c37d0",
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "libraryId": "templates-docx-styles.docx"
+    }
+  ],
   "integrity": {
     "compiler": "brand_compile.py",
     "compiler_version": "1.0",
@@ -1057,6 +1131,7 @@
       "generatedFrom",
       "identity",
       "images",
+      "libraryHandles",
       "logo",
       "plotly_theme",
       "presentation",
@@ -1083,6 +1158,6 @@
       "photo"
     ],
     "images_count": 6,
-    "sha256": "f1e962d771912cb26f41337f24ee739e3c885d7faf54f761b58fc41cfdbe8e8c"
+    "sha256": "1896655bb0e3c1c6ef2f73b7f41018cb2d2a118a55198a1b6f3c679c0154dfaf"
   }
 }
