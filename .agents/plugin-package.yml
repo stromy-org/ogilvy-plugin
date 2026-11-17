@@ -31,48 +31,12 @@ targets:
 - kiro
 - gemini
 portable_capabilities:
-  branded-deliverables:
-    summary: Branded documents, decks, charts, diagrams and video rendered server-side in the client's
-      brand
-    skills:
-    - format-chart
-    - format-diagram
-    - format-docx
-    - format-docx-hd
-    - format-guide
-    - format-html-hd
-    - format-i18n
-    - format-motion
-    - format-pdf
-    - format-pdf-hd
-    - format-pptx
-    - format-pptx-hd
-    - format-prepare-document
-    - format-video-hd
-    - format-xlsx
-    mcp_servers:
-    - stromy-format
   plugin-workflows:
     summary: Workflows authored for this plugin and shipped inside it
     skills:
     - getting-started
 skills:
   include:
-  - format-chart
-  - format-diagram
-  - format-docx
-  - format-docx-hd
-  - format-guide
-  - format-html-hd
-  - format-i18n
-  - format-motion
-  - format-pdf
-  - format-pdf-hd
-  - format-pptx
-  - format-pptx-hd
-  - format-prepare-document
-  - format-video-hd
-  - format-xlsx
   - getting-started
   provider_extras:
   - skill: asset-editor
@@ -111,39 +75,112 @@ skills:
     capability: cowork-workspace
     reason: Reads and writes the client's SharePoint workspace record through workspace-scoped tools that
       only exist in a Cowork workspace session. Would dead-end in Codex CLI.
+  - skill: format-chart
+    providers:
+    - claude
+    capability: stromy-format-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-format'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
+  - skill: format-diagram
+    providers:
+    - claude
+    capability: stromy-format-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-format'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
+  - skill: format-docx
+    providers:
+    - claude
+    capability: stromy-format-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-format'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
+  - skill: format-docx-hd
+    providers:
+    - claude
+    capability: stromy-format-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-format'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
+  - skill: format-guide
+    providers:
+    - claude
+    capability: stromy-format-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-format'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
+  - skill: format-html-hd
+    providers:
+    - claude
+    capability: stromy-format-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-format'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
+  - skill: format-i18n
+    providers:
+    - claude
+    capability: stromy-format-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-format'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
+  - skill: format-motion
+    providers:
+    - claude
+    capability: stromy-format-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-format'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
+  - skill: format-pdf
+    providers:
+    - claude
+    capability: stromy-format-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-format'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
+  - skill: format-pdf-hd
+    providers:
+    - claude
+    capability: stromy-format-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-format'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
+  - skill: format-pptx
+    providers:
+    - claude
+    capability: stromy-format-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-format'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
+  - skill: format-pptx-hd
+    providers:
+    - claude
+    capability: stromy-format-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-format'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
+  - skill: format-prepare-document
+    providers:
+    - claude
+    capability: stromy-format-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-format'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
+  - skill: format-video-hd
+    providers:
+    - claude
+    capability: stromy-format-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-format'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
+  - skill: format-xlsx
+    providers:
+    - claude
+    capability: stromy-format-connector
+    reason: 'Hosted on the OAuth-gated ''stromy-format'' MCP, which the plugin bundles as a Claude connector
+      (Connectors tab, hosted sign-in); the other hosts have no hosted sign-in, so it stays Claude-only
+      (Invariant #13).'
   description_overrides:
-    format-guide: Product guide for Stromy deliverables -- what to ask for, which format to pick, and
-      what each render skill produces. Use when someone is unsure which format skill fits, or is new to
-      the deliverable tooling.
-    format-prepare-document: Plan a multi-section document before anything is rendered. Use FIRST when
-      a branded PPTX, DOCX or PDF needs a section structure; hand the signed-off envelope to a format-*
-      render skill. Not a renderer itself.
-    format-pptx-hd: Create a NEW branded deck when a client charter exists -- server-rendered PPTX in
-      the brand fonts. Use for pitch, investor, executive and ordinary branded decks. Do NOT use to edit
-      or analyse an existing deck; that is format-pptx.
-    format-pptx: 'Default PPTX skill: unbranded new decks, plus editing, analysis, OOXML, comments and
-      speaker notes on any EXISTING deck. Use when a deck already exists or no brand is required.'
-    format-pdf-hd: Create a NEW branded PDF from HTML with the full web stack -- reports, one-pagers,
-      proposals. Use when the PDF must carry the client brand. Not for reading or editing an existing
-      PDF.
-    format-pdf: Read, extract, merge, split and manipulate EXISTING PDF files, including text and table
-      extraction. Use for PDF surgery, not for authoring a branded document.
-    format-docx: Create, read and edit Word .docx files. Use on any mention of a Word doc, .docx, tracked
-      changes, or a document that must open natively in Word.
-    format-xlsx: Create, edit and analyse spreadsheets -- formulas, formatting, charts, data analysis.
-      Use for .xlsx, Excel, or tabular data work.
-    format-html-hd: Author a premium, fully self-contained branded HTML slide deck -- one .html file.
-      Use when the client wants a web-openable deck rather than PowerPoint.
-    format-chart: Render brand-aware Plotly data-visualisation charts. Use when a chart is needed on its
-      own or to embed in another deliverable.
-    format-diagram: Generate branded diagrams -- process flows, architecture views, stakeholder maps,
-      org charts, timelines, funnels. Use when a concept needs a picture inside a branded deliverable.
-    format-motion: Author brand-aware motion across HTML surfaces -- animated decks and web pages. Use
-      when a deliverable needs movement rather than a static page.
-    format-video-hd: Author a premium branded explainer video -- a server-rendered MP4 with animated titles
-      and kinetic text. Use when the ask is a video, not a deck.
-    format-i18n: Keep a deliverable's language versions from drifting apart. Use when a document exists
-      in several languages and you need to know exactly what changed where.
     getting-started: Day-0 setup and orientation for this plugin inside Codex -- confirm the MCP servers
       are reachable, learn how to invoke a skill, and find the right guide. Use when someone is new, asks
       how to get started, or a skill reports its server is unreachable.

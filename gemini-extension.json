@@ -1,10 +1,5 @@
 {
   "name": "ogilvy-plugin",
   "version": "0.2.39",
-  "description": "Plugin for Ogilvy Dominicana branded deliverables (format skills via stromy-format MCP)",
-  "mcpServers": {
-    "stromy-format": {
-      "httpUrl": "https://stromy-format-mcp.whitetree-762cff59.westeurope.azurecontainerapps.io/mcp"
-    }
-  }
+  "description": "Plugin for Ogilvy Dominicana branded deliverables (format skills via stromy-format MCP)"
 }
