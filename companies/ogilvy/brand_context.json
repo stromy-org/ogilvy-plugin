@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "version": "1.0",
   "generatedFrom": {
-    "charterSha": "1674c79b0892c8b7c1ada38bb50e32c052ac63081fe146e39de03a3701fb73ca",
+    "charterSha": "e2e89da6478a8a3bbd88e7c518d19e06b9785dad8fd8e8cc0c48c2f64c84f4e7",
     "compiler": "1.0"
   },
   "tier": "output",
@@ -681,6 +681,35 @@
         "migratedFrom": "templates.docx",
         "plan": "ORG-PLAN-506"
       }
+    },
+    "masters": {
+      "default": {
+        "size": "A4",
+        "margins": {
+          "top": "22mm",
+          "right": "18mm",
+          "bottom": "22mm",
+          "left": "18mm"
+        },
+        "footer": {
+          "left": "{{BRAND_NAME}}",
+          "center": "{{CONFIDENTIALITY}}"
+        },
+        "pageNumbers": {
+          "format": "{{page}} / {{pages}}",
+          "position": "bottom-right"
+        },
+        "html": {
+          "content": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<style>\n{{TOKENS_CSS}}\n{{FONT_FACES}}\n\n@page { size: A4; margin: 0; }\nhtml, body { margin: 0; padding: 0; }\nbody {\n  width: 210mm; height: 297mm;\n  color: white;\n  background:\n    linear-gradient(rgba(20,30,28,0.52), rgba(20,30,28,0.52)),\n    url(\"{{HERO_URL}}\") center/cover;\n  font-family: var(--font-body);\n  position: relative;\n}\n.logo { position: absolute; top: 18mm; left: 18mm; }\n.logo img { height: 32pt; }\n.block { position: absolute; bottom: 30mm; left: 18mm; right: 18mm; }\n.overline {\n  font-family: var(--sf-font-label);\n  font-size: 9pt;\n  letter-spacing: 0.18em;\n  text-transform: uppercase;\n  color: var(--color-accent);\n  margin-bottom: 12pt;\n}\nh1 {\n  font-family: var(--sf-font-heading);\n  font-weight: var(--sf-w-heading);\n  font-size: 44pt;\n  line-height: 1.05;\n  margin: 0;\n  color: white;\n  max-width: 70%;\n}\n.subtitle {\n  font-size: 13pt;\n  opacity: 0.85;\n  max-width: 60%;\n  margin-top: 16pt;\n}\n.meta {\n  position: absolute;\n  bottom: 14mm;\n  left: 18mm;\n  right: 18mm;\n  display: flex;\n  justify-content: space-between;\n  font-family: var(--sf-font-label);\n  font-size: 8pt;\n  opacity: 0.7;\n}\n</style>\n</head>\n<body>\n  <div class=\"logo\"><img src=\"{{LOGO_URL}}\" alt=\"\"></div>\n  <div class=\"block\">\n    <div class=\"overline\">{{OVERLINE}}</div>\n    <h1>{{TITLE}}</h1>\n    <p class=\"subtitle\">{{SUBTITLE}}</p>\n  </div>\n  <div class=\"meta\">\n    <span>{{META_LEFT}}</span>\n    <span>{{META_MID}}</span>\n    <span>{{META_RIGHT}}</span>\n  </div>\n</body>\n</html>",
+          "sha256": "81d24c39dfea3515046b66b4806ee80ce7e0fda5496616d09e704e32ab17f2b8",
+          "source": "templates/pdf/cover.html"
+        },
+        "divider": {
+          "content": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<style>\n{{TOKENS_CSS}}\n{{FONT_FACES}}\n\n@page { size: A4; margin: 0; }\nhtml, body { margin: 0; padding: 0; }\nbody {\n  width: 210mm; height: 297mm;\n  color: white;\n  background:\n    linear-gradient(rgba(20,30,28,0.55), rgba(20,30,28,0.55)),\n    url(\"{{HERO_URL}}\") center/cover;\n  font-family: var(--font-body);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  padding: 0 40mm;\n}\n.part-label {\n  font-family: var(--sf-font-label);\n  font-size: 11pt;\n  letter-spacing: 0.22em;\n  text-transform: uppercase;\n  color: var(--color-accent);\n  margin-bottom: 14pt;\n}\nh1 {\n  font-family: var(--sf-font-heading);\n  font-weight: var(--sf-w-heading);\n  font-size: 56pt;\n  line-height: 1.05;\n  margin: 0;\n  color: white;\n}\n.motif {\n  margin-top: 20pt;\n}\n.motif .line-primary { border-top: 2pt solid var(--color-primary); width: 60mm; }\n.motif .line-accent  { border-top: 2pt solid var(--color-accent);  width: 30mm; margin-top: 4pt; }\n</style>\n</head>\n<body>\n  <div class=\"part-label\">{{PART_LABEL}}</div>\n  <h1>{{SECTION_TITLE}}</h1>\n  <div class=\"motif\">\n    <div class=\"line-primary\"></div>\n    <div class=\"line-accent\"></div>\n  </div>\n</body>\n</html>",
+          "sha256": "08de0a6d2e3a204e7f74196fb3d0a58bdcaf8ca0a7e6302ebed6382bdf0edaed",
+          "source": "templates/pdf/section-divider.html"
+        }
+      }
     }
   },
   "images": {
@@ -1158,6 +1187,6 @@
       "photo"
     ],
     "images_count": 6,
-    "sha256": "1896655bb0e3c1c6ef2f73b7f41018cb2d2a118a55198a1b6f3c679c0154dfaf"
+    "sha256": "fc97549209ac2ea11154aef9b7f39e937672aca08e6aa8d0ec496ddde263bd3d"
   }
 }
