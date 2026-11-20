@@ -8,7 +8,7 @@ schema_version: 1
 identity:
   name: ogilvy-plugin
   display_name: Ogilvy Dominicana
-  version: 0.2.37
+  version: 0.2.38
   description: Plugin for Ogilvy Dominicana branded deliverables (format skills via stromy-format MCP)
   author:
     name: stromy-org
@@ -38,7 +38,6 @@ portable_capabilities:
     - format-chart
     - format-diagram
     - format-docx
-    - format-docx-hd
     - format-guide
     - format-html-hd
     - format-i18n
@@ -46,22 +45,16 @@ portable_capabilities:
     - format-pdf
     - format-pdf-hd
     - format-pptx
-    - format-pptx-hd
     - format-prepare-document
     - format-video-hd
     - format-xlsx
     mcp_servers:
     - stromy-format
-  plugin-workflows:
-    summary: Workflows authored for this plugin and shipped inside it
-    skills:
-    - getting-started
 skills:
   include:
   - format-chart
   - format-diagram
   - format-docx
-  - format-docx-hd
   - format-guide
   - format-html-hd
   - format-i18n
@@ -69,11 +62,9 @@ skills:
   - format-pdf
   - format-pdf-hd
   - format-pptx
-  - format-pptx-hd
   - format-prepare-document
   - format-video-hd
   - format-xlsx
-  - getting-started
   provider_extras:
   - skill: asset-editor
     providers:
@@ -118,9 +109,6 @@ skills:
     format-prepare-document: Plan a multi-section document before anything is rendered. Use FIRST when
       a branded PPTX, DOCX or PDF needs a section structure; hand the signed-off envelope to a format-*
       render skill. Not a renderer itself.
-    format-pptx-hd: Create a NEW branded deck when a client charter exists -- server-rendered PPTX in
-      the brand fonts. Use for pitch, investor, executive and ordinary branded decks. Do NOT use to edit
-      or analyse an existing deck; that is format-pptx.
     format-pptx: 'Default PPTX skill: unbranded new decks, plus editing, analysis, OOXML, comments and
       speaker notes on any EXISTING deck. Use when a deck already exists or no brand is required.'
     format-pdf-hd: Create a NEW branded PDF from HTML with the full web stack -- reports, one-pagers,
@@ -144,9 +132,6 @@ skills:
       and kinetic text. Use when the ask is a video, not a deck.
     format-i18n: Keep a deliverable's language versions from drifting apart. Use when a document exists
       in several languages and you need to know exactly what changed where.
-    getting-started: Day-0 setup and orientation for this plugin inside Codex -- confirm the MCP servers
-      are reachable, learn how to invoke a skill, and find the right guide. Use when someone is new, asks
-      how to get started, or a skill reports its server is unreachable.
 providers:
   openai:
     interface:

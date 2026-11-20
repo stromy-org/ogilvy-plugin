@@ -1,6 +1,6 @@
 ---
 name: format-docx
-description: "DEFAULT skill for ANY Word or .docx request, branded or not: a memo, report, letter, brief or proposal; a document on the client's own template or letterhead; a table of contents, headers, footers and page numbers; editing an existing .docx in place with tracked changes, comments, find-and-replace, accept or reject; reading or extracting its text. Builds native, editable Word files server-side with `build_docx` (python-docx) and edits them with `edit_docx`, with a structural lint (styles, heading order, alt text, table fit, numbering, TOC) and a render-back of the finished file. Use `format-docx-hd` only when the user wants an art-directed, web-style layout authored as HTML. Not for PDFs (format-pdf), spreadsheets (format-xlsx) or Google Docs."
+description: "DEFAULT skill for ANY Word or .docx request, branded or not: a memo, report, letter, brief or proposal; a document on the client's own template or letterhead; a table of contents, headers, footers and page numbers; editing an existing .docx in place with tracked changes, comments, find-and-replace, accept or reject; reading or extracting its text. Builds native, editable Word files server-side with `build_docx` (python-docx) and edits them with `edit_docx`, with a structural lint (styles, heading order, alt text, table fit, numbering, TOC) and a render-back of the finished file. For an art-directed, web-style page use `format-pdf-hd`. Not for PDFs (format-pdf), spreadsheets (format-xlsx) or Google Docs."
 metadata:
   stromy-client-summary: "Create or edit Word documents on your own template and brand: memos, reports, letters, tables of contents, tracked changes and comments."
 ---
@@ -17,6 +17,16 @@ metadata:
 # Word (.docx): create, edit, review (MCP-hosted skill)
 
 This skill's full instructions are hosted on the `stromy-format` MCP server. Do not hardcode workflow logic locally — always fetch the live version from the MCP.
+
+## Before you start — this skill needs the `stromy-format` connector
+
+This skill's instructions live on the `stromy-format` MCP, a sign-in connector the plugin bundles. Each user connects it once. Before step 1 below, check whether this conversation actually has the `stromy-format` MCP's tools (`fs_read` / `fs_list`) available to call.
+
+**If those tools are not present at all, STOP — and do not retry.** A missing tool is not a slow server: it means the connector is not connected yet, or not switched on for this conversation. Retrying cannot fix it. Tell the user plainly what to do, naming the connector:
+
+> This needs the **Stromy Format** connector, which isn't connected for this chat. Open Customize, then Plugins, choose this plugin and open its **Connectors** tab. Click **Connect** next to **Stromy Format** and sign in with your work account (if it says **Not added**, add it there first, or ask your workspace owner to). Then make sure it is switched on for this conversation and ask me again.
+
+Then stop and wait. Never fall back to a local or identically-named base skill, and never answer from your own knowledge instead — an unsourced answer is **wrong output, not a fallback**.
 
 ## Loading instructions
 
